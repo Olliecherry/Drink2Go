@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -63,84 +65,101 @@
     <main class="main-container">
       <h1 class="visually-hidden">Сайт о кофе.</h1>
       <section class="advertisement">
-        <div class="advertisement__wrapper slider slider--white">
-          <div class="advertisement__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-white@1x.webp 1x, img/images-advertisement/advert-desk-white@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-white@1x.webp 1x, img/images-advertisement/advert-tab-white@2x.webp 2x">
-              <source type="image/webp" srcset="img/images-advertisement/advert-white-mob@1x.webp 1x, img/images-advertisement/advert-white-mob@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-white@1x.png 1x, img/images-advertisement/advert-desk-white@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-white@1x.png 1x, img/images-advertisement/advert-tab-white@2x.png 2x">
-              <img class="advertisement__product" src="img/images-advertisement/advert-white-mob@1x.png" srcset="img/images-advertisement/advert-white-mob@2x.png 2x" width="280" height="280" alt="Decaf Flat White.">
-            </picture>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slider slider--white">
+              <div class="advertisement__wrapper container">
+                <div class="advertisement__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-white@1x.webp 1x, img/images-advertisement/advert-desk-white@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-white@1x.webp 1x, img/images-advertisement/advert-tab-white@2x.webp 2x">
+                    <source type="image/webp" srcset="img/images-advertisement/advert-white-mob@1x.webp 1x, img/images-advertisement/advert-white-mob@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-white@1x.png 1x, img/images-advertisement/advert-desk-white@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-white@1x.png 1x, img/images-advertisement/advert-tab-white@2x.png 2x">
+                    <img class="advertisement__product" src="img/images-advertisement/advert-white-mob@1x.png" srcset="img/images-advertisement/advert-white-mob@2x.png 2x" width="280" height="280" alt="Decaf Flat White.">
+                  </picture>
+                </div>
+                <p class="advertisement__text">Новинка!</p>
+                <div class="advertisement__slogan container">
+                  <h2 class="advertisement__title">Декаф Флэт Уайт</h2>
+                </div>
+                <p class="advertisement__description">
+                  Свежесваренный кофе без кофеина из Эфиопии
+      с натуральным фермерским молоком — то, что нужно
+      для расслабления после тяжёлого рабочего дня
+                </p>
+                <div class="advertisement__price">
+                  <p class="advertisement__oldprice">295₽</p>
+                  <p class="advertisement__newprice">225₽</p>
+                </div>
+                <div class="advertisement__order">
+                  <button class="advertisement__button button button--violet">Заказать</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slider slider--lavender">
+              <div class="advertisement__wrapper container">
+                <div class="advertisement__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop/triple-set-desktop@1x.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet@1x.webp 1x, img/tablet/triple-set-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/mobile/triple-set-mobile@1x.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-lavender@1x.png 1x, img/images-advertisement/advert-desk-lavender@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-lavender@1x.png 1x, img/images-advertisement/advert-tab-lavender@2x.png 2x">
+                    <img class="advertisement__product" src="img/images-advertisement/advert-mob-lavender@1x.png" srcset="img/images-advertisement/advert-mob-lavender@2x.png 2x" width="280" height="280" alt="Lavender Latte.">
+                  </picture>
+                </div>
+                <p class="advertisement__text">Новинка!</p>
+                <div class="advertisement__slogan container">
+                  <h2 class="advertisement__title">Лавандовый Латте</h2>
+                </div>
+                <p class="advertisement__description">
+                  Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                </p>
+                <div class="advertisement__price">
+                  <p class="advertisement__oldprice">285₽</p>
+                  <p class="advertisement__newprice">265₽</p>
+                </div>
+                <div class="advertisement__order">
+                  <button class="advertisement__button button button--violet">Заказать</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slider slider--espresso">
+              <div class="advertisement__wrapper container">
+                <div class="advertisement__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop/triple-set-desktop@1x.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet@1x.webp 1x, img/tablet/triple-set-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/mobile/triple-set-mobile@1x.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-black@1x.png 1x, img/images-advertisement/advert-desk-black@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-black@1x.png 1x, img/images-advertisement/advert-tab-black@2x.png 2x">
+                    <img class="advertisement__product" src="img/images-advertisement/advert-mob-black@1x.png" srcset="img/images-advertisement/advert-mob-black@2x.png 2x" width="260" height="315" alt="Еда для кота.">
+                  </picture>
+                </div>
+                <p class="advertisement__text">Новинка!</p>
+                <div class="advertisement__slogan container">
+                  <h2 class="advertisement__title">Тройной Эспрессо</h2>
+                </div>
+                <p class="advertisement__description">
+                  Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                </p>
+                <div class="advertisement__price">
+                  <p class="advertisement__oldprice">395₽</p>
+                  <p class="advertisement__newprice">375₽</p>
+                </div>
+                <div class="advertisement__order">
+                  <button class="advertisement__button button button--violet">Заказать</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="advertisement__text">Новинка!</p>
-          <div class="advertisement__slogan container">
-            <h2 class="advertisement__title">Декаф Флэт Уайт</h2>
-          </div>
-          <p class="advertisement__description">
-            Свежесваренный кофе без кофеина из Эфиопии
-с натуральным фермерским молоком — то, что нужно
-для расслабления после тяжёлого рабочего дня
-          </p>
-          <div class="advertisement__price">
-            <p class="advertisement__oldprice">295₽</p>
-            <p class="advertisement__newprice">225₽</p>
-          </div>
-          <div class="advertisement__order">
-            <button class="advertisement__button button button--violet">Заказать</button>
-          </div>
-        </div>
-        <div class="advertisement__wrapper slider slider--lavender">
-          <div class="advertisement__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop/triple-set-desktop@1x.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet@1x.webp 1x, img/tablet/triple-set-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/mobile/triple-set-mobile@1x.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-lavender@1x.png 1x, img/images-advertisement/advert-desk-lavender@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-lavender@1x.png 1x, img/images-advertisement/advert-tab-lavender@2x.png 2x">
-              <img class="advertisement__product" src="img/images-advertisement/advert-mob-lavender@1x.png" srcset="img/images-advertisement/advert-mob-lavender@2x.png 2x" width="280" height="280" alt="Lavender Latte.">
-            </picture>
-          </div>
-          <p class="advertisement__text">Новинка!</p>
-          <div class="advertisement__slogan container">
-            <h2 class="advertisement__title">Лавандовый Латте</h2>
-          </div>
-          <p class="advertisement__description">
-            Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
-          </p>
-          <div class="advertisement__price">
-            <p class="advertisement__oldprice">285₽</p>
-            <p class="advertisement__newprice">265₽</p>
-          </div>
-          <div class="advertisement__order">
-            <button class="advertisement__button button button--violet">Заказать</button>
-          </div>
-        </div>
-        <div class="advertisement__wrapper slider slider--espresso">
-          <div class="advertisement__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop/triple-set-desktop@1x.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet@1x.webp 1x, img/tablet/triple-set-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/mobile/triple-set-mobile@1x.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-black@1x.png 1x, img/images-advertisement/advert-desk-black@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-black@1x.png 1x, img/images-advertisement/advert-tab-black@2x.png 2x">
-              <img class="advertisement__product" src="img/images-advertisement/advert-mob-black@1x.png" srcset="img/images-advertisement/advert-mob-black@2x.png 2x" width="260" height="315" alt="Еда для кота.">
-            </picture>
-          </div>
-          <p class="advertisement__text">Новинка!</p>
-          <div class="advertisement__slogan container">
-            <h2 class="advertisement__title">Тройной Эспрессо</h2>
-          </div>
-          <p class="advertisement__description">
-            Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
-          </p>
-          <div class="advertisement__price">
-            <p class="advertisement__oldprice">395₽</p>
-            <p class="advertisement__newprice">375₽</p>
-          </div>
-          <div class="advertisement__order">
-            <button class="advertisement__button button button--violet">Заказать</button>
+          <div class="advertisement__container container">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>
@@ -466,6 +485,7 @@
             <source media="(min-width: 768px)" srcset="img/images-map/map-tab@1x.png 1x, img/images-map/map-tab@2x.png 2x">
             <img class="map__image" src="img/images-map/map-mob@1x.png" srcset="img/images-map/map-mob@2x.png 2x" width="320" height="420" alt="Карта магазина.">
           </picture>
+          <div class="map__leaflet" id="map"></div>
         </div>
       </section>
     </main>
@@ -559,6 +579,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
