@@ -40,33 +40,264 @@
             </li>
           </ul>
           <ul class="main-nav__add desk-list">
-            <li class="desk-list__item desk-list__item--arrivals">
-              <a class="desk-list__link" href="catalog.html">Новые поступления</a>
-            </li>
-            <li class="desk-list__item desk-list__item--sale">
-              <a class="desk-list__link" href="catalog.html">Распродажа</a>
-            </li>
-            <li class="site-list__item site-list__item--search">
-              <a class="site-list__link site-list__link--search" href="#">
-                <svg class="site-list__icon" width="18" height="18">
-                  <use xlink:href="img/sprite.svg#icon-search"></use>
+            <li class="desk-list__item desk-list__item--user">
+              <a class="desk-list__link" href="#">
+                <svg class="desk-list__icon" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-user"></use>
                 </svg>
-                <span class="site-list__text">Поиск по сайту</span>
+                <span class="desk-list__text">Войти</span>
               </a>
             </li>
-            <li class="site-list__item site-list__item--basket">
-              <a class="site-list__link site-list__link--basket" href="form.html">
-                <svg class="site-list__icon" width="21" height="19">
+            <li class="desk-list__item desk-list__item--basket">
+              <a class="desk-list__link" href="#">
+                <svg class="desk-list__icon" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-basket"></use>
                 </svg>
-                <span class="site-list__text site-list__text--basket">Корзина: пока пуста</span>
+                <span class="desk-list__text">Корзина</span>
               </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-
-    <script src="./js/script.js" defer></script>
+    <main class="main-container">
+      <h1 class="visually-hidden">Сайт о кофе.</h1>
+      <section class="advertisement">
+        <div class="advertisement__wrapper slider slider--white">
+          <div class="advertisement__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop/triple-set-desktop@1x.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet@1x.webp 1x, img/tablet/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/triple-set-mobile@1x.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-white@1x.png 1x, img/images-advertisement/advert-desk-white@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-white@1x.png 1x, img/images-advertisement/advert-tab-white@2x.png 2x">
+              <img class="advertisement__product" src="img/images-advertisement/advert-white-mob@1x.png" srcset="img/images-advertisement/advert-white-mob@2x.png 2x" width="280" height="280" alt="Decaf Flat White.">
+            </picture>
+          </div>
+          <p class="advertisement__text">Новинка!</p>
+          <div class="advertisement__slogan container">
+            <h2 class="advertisement__title">Декаф Флэт Уайт</h2>
+          </div>
+          <p class="advertisement__description">
+            Свежесваренный кофе без кофеина из Эфиопии
+с натуральным фермерским молоком — то, что нужно
+для расслабления после тяжёлого рабочего дня
+          </p>
+          <div class="advertisement__price">
+            <p class="advertisement__oldprice">295₽</p>
+            <p class="advertisement__newprice">225₽</p>
+          </div>
+          <div class="advertisement__order">
+            <button class="advertisement__button button button--violet">Заказать</button>
+          </div>
+        </div>
+        <div class="advertisement__wrapper slider slider--lavender">
+          <div class="advertisement__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop/triple-set-desktop@1x.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet@1x.webp 1x, img/tablet/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/triple-set-mobile@1x.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-lavender@1x.png 1x, img/images-advertisement/advert-desk-lavender@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-lavender@1x.png 1x, img/images-advertisement/advert-tab-lavender@2x.png 2x">
+              <img class="advertisement__product" src="img/images-advertisement/advert-mob-lavender@1x.png" srcset="img/images-advertisement/advert-mob-lavender@2x.png 2x" width="280" height="280" alt="Lavender Latte.">
+            </picture>
+          </div>
+          <p class="advertisement__text">Новинка!</p>
+          <div class="advertisement__slogan container">
+            <h2 class="advertisement__title">Лавандовый Латте</h2>
+          </div>
+          <p class="advertisement__description">
+            Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+          </p>
+          <div class="advertisement__price">
+            <p class="advertisement__oldprice">285₽</p>
+            <p class="advertisement__newprice">265₽</p>
+          </div>
+          <div class="advertisement__order">
+            <button class="advertisement__button button button--violet">Заказать</button>
+          </div>
+        </div>
+        <div class="advertisement__wrapper slider slider--espresso">
+          <div class="advertisement__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop/triple-set-desktop@1x.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet@1x.webp 1x, img/tablet/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/triple-set-mobile@1x.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/images-advertisement/advert-desk-black@1x.png 1x, img/images-advertisement/advert-desk-black@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/images-advertisement/advert-tab-black@1x.png 1x, img/images-advertisement/advert-tab-black@2x.png 2x">
+              <img class="advertisement__product" src="img/images-advertisement/advert-mob-black@1x.png" srcset="img/images-advertisement/advert-mob-black@2x.png 2x" width="260" height="315" alt="Еда для кота.">
+            </picture>
+          </div>
+          <p class="advertisement__text">Новинка!</p>
+          <div class="advertisement__slogan container">
+            <h2 class="advertisement__title">Тройной Эспрессо</h2>
+          </div>
+          <p class="advertisement__description">
+            Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+          </p>
+          <div class="advertisement__price">
+            <p class="advertisement__oldprice">395₽</p>
+            <p class="advertisement__newprice">375₽</p>
+          </div>
+          <div class="advertisement__order">
+            <button class="advertisement__button button button--violet">Заказать</button>
+          </div>
+        </div>
+      </section>
+      <section class="features container">
+        <div class="features__slogan">
+          <p class="features__name">Преимущества</p>
+          <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
+        </div>
+        <ul class="features__list">
+            <li class="features__item features__item--speed">
+              <h3 class="features__slogan">Скорость</h3>
+              <p class="features__description features__description--speed">Готовый напиток всегда под рукой — просто открой банку</p>
+            </li>
+            <li class="features__item features__item--comfort">
+              <h3 class="features__slogan">Удобство</h3>
+              <p class="features__description features__description--comfort">Легко помещается и в карман,
+                и в маленькую сумочку</p>
+            </li>
+            <li class="features__item features__item--energy">
+              <h3 class="features__slogan">Бодрость</h3>
+              <p class="features__description features__description--energy">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+            </li>
+            <li class="features__item features__item--eco">
+              <h3 class="features__slogan">Экологичность</h3>
+              <p class="features__description features__description--eco">Вся упаковка сделана
+                из перерабатываемых материалов</p>
+            </li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <div class="catalog__slogan">
+          <h2 class="catalog__name">Каталог</h2>
+          <h1 class="catalog__title">Каталог кофейных напитков</h1>
+        </div>
+        <div class="catalog__wrapper">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form__price pricing">
+              <fieldset class="pricing__group">
+                <legend class="pricing__title">
+                  Цена
+                </legend>
+                <div class="pricing__wrapper range">
+                    <label class="range__label">
+                      <span class="range__label-text"></span>
+                      <input class="range__input cost-min" type="number" placeholder="0" name="min-price" min="0" max="150" value="0">
+                    </label>
+                    <label class="range__label">
+                      <span class="range__label-text"></span>
+                      <input class="range__input cost-max" type="number" placeholder="123" name="max-price" min="100" max="150" value="150">
+                    </label>
+                </div>
+                <div class="range">
+                    <div class="range__scale">
+                      <div class="range__bar">
+                        <button type="range__button" class="range__toggle range__toggle--min">
+                          <span class="visually-hidden">Уменьшить стоимость</span>
+                        </button>
+                        <button type="range__button" class="range__toggle range__toggle--max">
+                          <span class="visually-hidden">Увеличить стоимость</span>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form__wrapper form__wrapper--milk">
+              <fieldset class="form__group">
+                <legend class="form__title form__title--type">Наличие молока</legend>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <label class="form__label-radiobutton" for="milk">
+                      <input class="form__input-radiobutton" type="radio" id="milk" name="choice__group" value="milk" checked>
+                      <span class="form__checkmark"></span>
+                      <span class="form__text form__text--radiobutton">Неважно</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label-radiobutton" for="milk">
+                      <input class="form__input-radiobutton" type="radio" id="milk" name="choice__group" value="milk">
+                      <span class="form__checkmark"></span>
+                      <span class="form__text form__text--radiobutton">Только животное</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label-radiobutton" for="milk">
+                      <input class="form__input-radiobutton" type="radio" id="milk" name="choice__group" value="milk">
+                      <span class="form__checkmark"></span>
+                      <span class="form__text form__text--radiobutton">Только растительное</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label-radiobutton" for="milk">
+                      <input class="form__input-radiobutton" type="radio" id="milk" name="choice__group" value="milk">
+                      <span class="form__checkmark"></span>
+                      <span class="form__text form__text--radiobutton">Без молока</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form__wrapper form__wrapper--origin">
+              <fieldset class="form__group form__group--checkbox">
+                <legend class="form__title">Страна произрастания</legend>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <label class="form__label-checkbox" for="origin">
+                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__group" value="origin" checked>
+                      <span class="form__checkmark"></span>
+                      <span class="form__text form__text--checkbox">Бразилия</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label-checkbox" for="origin">
+                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__group" value="origin" checked>
+                      <span class="form__checkmark"></span>
+                      <span class="form__text form__text--checkbox">Эфиопия</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label-checkbox" for="origin">
+                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__group" value="origin" checked>
+                      <span class="form__checkmark"></span>
+                      <span class="form__text form__text--checkbox">Колумбия</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label-checkbox" for="origin">
+                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__group" value="origin" checked>
+                      <span class="form__checkmark"></span>
+                      <span class="form__text form__text--checkbox">Коста-Рика</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label-checkbox" for="origin">
+                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__group" value="origin" checked>
+                      <span class="form__checkmark"></span>
+                      <span class="form__text form__text--checkbox">Перу</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+        <div class="catalog__choice">
+          <button class="catalog__button button button-violet" type="submit">Применить</button>
+          <button class="catalog__button button button--white" type="reset">Сбросить</button>
+        </div>
+        <div class="catolog__sorting sorting">
+          <select class="sorting__list select-control" aria-label="Сортировка">
+            <option value="sorting__default">по умолчанию</option>
+            <option value="sorting__popular">Сначала популярные</option>
+            <option value="sorting__expensive">Сначала дорогие</option>
+          </select>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
