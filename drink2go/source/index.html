@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Drink2Go</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="main-header__part container">
+        <div class="main-header__wrapper">
+          <a class="main-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/desktop/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/tablet/mishka-logo-tablet.svg">
+              <img class="main-header__logotip" src="img/images-svg/logo-mobile.svg" width="260" height="315" alt="Логотип сайта мишки.">
+            </picture>
+          </a>
+          <button class="main-header__toggle main-header__toggle--nojs" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--catalog">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item site-list__item--order">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__link site-list__link--search" href="#">
+                <svg class="site-list__icon" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+                <span class="site-list__text">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--basket">
+              <a class="site-list__link site-list__link--basket" href="form.html">
+                <svg class="site-list__icon" width="21" height="19">
+                  <use xlink:href="img/sprite.svg#icon-basket"></use>
+                </svg>
+                <span class="site-list__text site-list__text--basket">Корзина: пока пуста</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__add desk-list">
+            <li class="desk-list__item desk-list__item--arrivals">
+              <a class="desk-list__link" href="catalog.html">Новые поступления</a>
+            </li>
+            <li class="desk-list__item desk-list__item--sale">
+              <a class="desk-list__link" href="catalog.html">Распродажа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__item">
+          <p class="main-header__text">Бесплатная доставка по России</p>
+        </div>
+      </div>
+    </header>
+
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
