@@ -1,20 +1,20 @@
-const navMain = document.querySelector('.nav');
+const navMain = document.querySelector('.nav__list');
 const navToggle = document.querySelector('.header__toggle');
 const navToggleNoJs = document.querySelector('.header__toggle--nojs');
 
 navToggle.classList.remove('header__toggle--nojs');
-navMain.classList.add('nav--closed');
-navMain.classList.remove('nav--opened');
-navMain.classList.remove('nav--nojs');
+navMain.classList.add('nav__list--closed');
+navMain.classList.remove('nav__list--opened');
+navMain.classList.remove('nav__list--nojs');
 
 navToggle.addEventListener('click', function () {
   navToggle.classList.add('active');
-  if (navMain.classList.contains('nav--closed')) {
-    navMain.classList.remove('nav--closed');
-    navMain.classList.add('nav--opened');
+  if (navMain.classList.contains('nav__list--closed')) {
+    navMain.classList.remove('nav__list--closed');
+    navMain.classList.add('nav__list--opened');
   } else {
-    navMain.classList.add('nav--closed');
-    navMain.classList.remove('nav--opened');
+    navMain.classList.add('nav__list--closed');
+    navMain.classList.remove('nav__list--opened');
   }
 });
 

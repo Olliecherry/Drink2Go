@@ -1,6 +1,8 @@
 .desk-list {
   display: flex;
   background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 .desk-list__item {
@@ -44,24 +46,31 @@
 @media (min-width: $desktop-width) {
   .desk-list__item {
     display: flex;
-    margin: 32px 22px;
-  }
-
-  .desk-list__item--arrivals {
-    margin-right: 45px;
-    margin-left: 0;
-  }
-
-  .desk-list__item--sale {
-    margin-left: 18px;
+    margin: 32px 32px 32px 20px;
+    padding: 0;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 
   .desk-list__link {
     font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 24px;
-    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    list-style-type: none;
+    color: #333333;
     text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .desk-list__text {
+    display: block;
+  }
+
+  .desk-list__icon {
+    margin-right: 8px;
   }
 }

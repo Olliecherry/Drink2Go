@@ -7,6 +7,7 @@
 
   &:active {
     opacity: 0.3;
+    color: #7859CF;
   }
 }
 
@@ -27,6 +28,10 @@
   text-transform: uppercase;
 }
 
+.site-list__item--active {
+  color: #7859CF;
+}
+
 @media (max-width: $mobile-width-only) {
   .site-list {
     width: 100%;
@@ -40,8 +45,13 @@
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    border-top: 1px solid #e6e6e6;
-    position: relative;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #F0EBFF;
+  }
+
+  .site-list__item--index {
+    border-top: 1px solid #F0EBFF;
   }
 
   .site-list__link {
@@ -65,7 +75,6 @@
   .site-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     align-content: center;
@@ -79,38 +88,6 @@
     border-bottom: 2px solid #7859CF;
   }
 
-  .site-list__icon {
-    // justify-self: center;
-  }
-
-  .site-list__link--search {
-    padding: 37px 31px 29px 33px;
-    border: 1px solid #e6e6e6;
-    order: 1;
-  }
-
-  .site-list__item--search {
-    margin-left: 320px;
-    margin-top: 36px;
-  }
-
-  .site-list__item--basket {
-    margin-left: 36px;
-    margin-right: 0;
-    margin-top: 34px;
-    order: 2;
-  }
-
-  .site-list__item--catalog {
-    // margin-top: 49px;
-    // margin-right: 37px;
-  }
-
-  .site-list__item--order {
-    // margin-top: 49px;
-    // margin-right: 30px;
-  }
-
   .site-list__link--basket {
     position: relative;
     display: flex;
@@ -118,13 +95,6 @@
 
   .site-list__text {
     display: none;
-    font-size: 17px;
-    line-height: 24px;
-  }
-
-  .site-list__text--basket {
-    display: block;
-    margin-left: 25px;
   }
 }
 
@@ -135,38 +105,6 @@
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-  }
-
-  .site-list__link {
-    font-size: 17px;
-  }
-
-  .site-list__item--basket {
-    margin-left: 37px;
-    margin-right: 2px;
-    margin-top: 32px;
-    order: 4;
-    border-right: none;
-  }
-
-  .site-list__item--search {
-    order: 3;
-    margin-left: 30px;
-    margin-top: 36px;
-  }
-
-  .site-list__item--order {
-    order: 2;
-    margin: 32px 295px 31px 35px;
-  }
-
-  .site-list__item--catalog {
-    order: 1;
-    margin: 32px 35px 31px 0;
-  }
-
-  .site-list__link--basket {
-    position: relative;
-    margin: 0;
+    align-content: center;
   }
 }
