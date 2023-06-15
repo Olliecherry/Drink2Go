@@ -35,6 +35,7 @@
 @media (max-width: $mobile-width-only) {
   .site-list {
     width: 100%;
+    display: flex;
     flex-direction: column;
     justify-items: center;
     padding: 0;
