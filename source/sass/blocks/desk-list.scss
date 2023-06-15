@@ -1,0 +1,61 @@
+.desk-list {
+  display: flex;
+  background-color: transparent;
+}
+
+.desk-list__item {
+  width: 60px;
+  list-style-type: none;
+  align-self: center;
+}
+
+.desk-list__text {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .desk-list__item--arrivals {
+    display: none;
+  }
+
+  .desk-list__item--sale {
+    display: none;
+  }
+
+  .desk-list__item {
+    list-style-type: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .desk-list__item {
+    display: flex;
+  }
+
+  .desk-list__item--arrivals {
+    margin-right: 45px;
+    margin-left: 0;
+  }
+
+  .desk-list__item--sale {
+    margin-left: 18px;
+  }
+
+  .desk-list__link {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+  }
+}
