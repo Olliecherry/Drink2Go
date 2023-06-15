@@ -98,6 +98,11 @@
 @media (min-width: $tablet-width) {
   .nav__add {
     display: flex;
+    margin-left: 60px;
+  }
+
+  .nav {
+    margin-left: 149px;
   }
 }
 
@@ -112,7 +117,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 22px;
+    margin-top: 0;
     padding: 0;
   }
 }
