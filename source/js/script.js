@@ -1,3 +1,23 @@
+const navMain = document.querySelector('.nav');
+const navToggle = document.querySelector('.header__toggle');
+const navToggleNoJs = document.querySelector('.header__toggle--nojs');
+
+navToggle.classList.remove('header__toggle--nojs');
+navMain.classList.add('nav--closed');
+navMain.classList.remove('nav--opened');
+navMain.classList.remove('nav--nojs');
+
+navToggle.addEventListener('click', function () {
+  navToggle.classList.add('active');
+  if (navMain.classList.contains('nav--closed')) {
+    navMain.classList.remove('nav--closed');
+    navMain.classList.add('nav--opened');
+  } else {
+    navMain.classList.add('nav--closed');
+    navMain.classList.remove('nav--opened');
+  }
+});
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,

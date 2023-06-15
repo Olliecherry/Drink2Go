@@ -1,0 +1,15 @@
+.page {
+  height: 100%;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  color: #333333;
+  margin: 0;
+}

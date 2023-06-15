@@ -1,5 +1,150 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: #ffffff;
+  color: #000000;
 }
+
+.header__part {
+  justify-content: center;
+}
+
+.header__logo {
+  border: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__text {
+  color: #444444;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .header__part {
+    min-height: 79px;
+  }
+
+  .header__wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .header__logo {
+    position: absolute;
+    top: 22px;
+    left: 86px;
+  }
+
+  .header__logotip {
+    height: 35px;
+    width: 86px;
+  }
+
+  .header__item {
+    display: none;
+  }
+
+  .header__toggle {
+    position: absolute;
+    background: url("../img/images-svg/icon-menu.svg") center no-repeat;
+    background-color: transparent;
+    top: 32px;
+    right: 0;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    justify-self: end;
+    border: none;
+  }
+
+  .header__toggle--nojs {
+    display: none;
+  }
+
+  .header__toggle--nojs ~ .header__toggle {
+    display: none;
+  }
+
+  .header__toggle.active {
+    background: url("../img/images-svg/icon-menu.svg") center no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__part {
+    height: 89px;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .header__wrapper {
+    border-right: #444444;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__logo {
+    position: absolute;
+    top: 22px;
+    left: 48px;
+  }
+
+  .header__logotip {
+    height: 46px;
+    width: 113px;
+  }
+
+  .header__item {
+    display: flex;
+    justify-content: right;
+    margin-top: -40px;
+    margin-left: 380px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__part {
+    position: relative;
+  }
+
+  .header__wrapper {
+    margin: 0;
+  }
+
+  .header__logo {
+    position: absolute;
+    top: 9px;
+    left: 470px;
+    margin-left: 30px;
+    margin-right: 101px;
+  }
+
+  .header__logotip {
+    height: 72px;
+    width: 149px;
+  }
+
+  .header__item {
+    margin-top: -60px;
+    margin-left: 500px;
+  }
+
+  .header__text {
+    margin-top: 18px;
+  }
+}
+
