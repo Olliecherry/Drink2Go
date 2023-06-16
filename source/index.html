@@ -160,9 +160,9 @@
         </div>
       </section>
       <section class="features container">
-        <div class="features__slogan">
+        <div class="features__motto">
           <p class="features__name">Преимущества</p>
-          <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
+          <h2 class="features__title">Главные причины выбрать<br> Drink2Go</h2>
         </div>
         <ul class="features__list">
             <li class="features__item features__item--speed">
@@ -193,8 +193,8 @@
         <div class="catalog__wrapper">
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__price pricing">
-              <fieldset class="pricing__group">
-                <legend class="pricing__title">
+              <fieldset class="form__group pricing__group">
+                <legend class="form__group-title">
                   Цена
                 </legend>
                 <div class="range">
@@ -223,30 +223,30 @@
             </div>
             <div class="form__wrapper form__wrapper--milk">
               <fieldset class="form__group">
-                <legend class="form__title form__title--type">Наличие молока</legend>
+                <legend class="form__group-title">Наличие молока</legend>
                 <ul class="form__list">
-                  <li class="form__item">
+                  <li class="form__radiobutton">
                     <label class="form__label-radiobutton" for="nodifference">
                       <input class="form__input-radiobutton" type="radio" id="nodifference" name="choice__milk" value="nodifference" checked>
                       <span class="form__checkmark"></span>
                       <span class="form__text form__text--radiobutton">Неважно</span>
                     </label>
                   </li>
-                  <li class="form__item">
+                  <li class="form__radiobutton">
                     <label class="form__label-radiobutton" for="animal">
                       <input class="form__input-radiobutton" type="radio" id="animal" name="choice__milk" value="animal">
                       <span class="form__checkmark"></span>
                       <span class="form__text form__text--radiobutton">Только животное</span>
                     </label>
                   </li>
-                  <li class="form__item">
+                  <li class="form__radiobutton">
                     <label class="form__label-radiobutton" for="vegan">
                       <input class="form__input-radiobutton" type="radio" id="vegan" name="choice__milk" value="vegan">
                       <span class="form__checkmark"></span>
                       <span class="form__text form__text--radiobutton">Только растительное</span>
                     </label>
                   </li>
-                  <li class="form__item">
+                  <li class="form__radiobutton">
                     <label class="form__label-radiobutton" for="nomilk">
                       <input class="form__input-radiobutton" type="radio" id="nomilk" name="choice__milk" value="nomilk">
                       <span class="form__checkmark"></span>
@@ -258,39 +258,39 @@
             </div>
             <div class="form__wrapper form__wrapper--origin">
               <fieldset class="form__group form__group--checkbox">
-                <legend class="form__title">Страна произрастания</legend>
+                <legend class="form__group-title">Страна произрастания</legend>
                 <ul class="form__list">
-                  <li class="form__item">
+                  <li class="form__checkbox">
                     <label class="form__label-checkbox" for="origin">
                       <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin" checked>
                       <span class="form__checkmark"></span>
                       <span class="form__text form__text--checkbox">Бразилия</span>
                     </label>
                   </li>
-                  <li class="form__item">
+                  <li class="form__checkbox">
                     <label class="form__label-checkbox" for="origin">
-                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin" checked>
+                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
                       <span class="form__checkmark"></span>
                       <span class="form__text form__text--checkbox">Эфиопия</span>
                     </label>
                   </li>
-                  <li class="form__item">
+                  <li class="form__checkbox">
                     <label class="form__label-checkbox" for="origin">
-                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin" checked>
+                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
                       <span class="form__checkmark"></span>
                       <span class="form__text form__text--checkbox">Колумбия</span>
                     </label>
                   </li>
-                  <li class="form__item">
+                  <li class="form__checkbox">
                     <label class="form__label-checkbox" for="origin">
-                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin" checked>
+                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
                       <span class="form__checkmark"></span>
                       <span class="form__text form__text--checkbox">Коста-Рика</span>
                     </label>
                   </li>
-                  <li class="form__item">
+                  <li class="form__checkbox">
                     <label class="form__label-checkbox" for="origin">
-                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin" checked>
+                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
                       <span class="form__checkmark"></span>
                       <span class="form__text form__text--checkbox">Перу</span>
                     </label>
@@ -305,6 +305,7 @@
           </form>
         </div>
         <div class="catalog__sorting sorting">
+          <h2 class="sorting__name">Сортировка:</h2>
           <select class="sorting__list select-control" label="Сортировка" for="select-control">
             <option value="sorting__default">по умолчанию</option>
             <option value="sorting__popular">Сначала популярные</option>
