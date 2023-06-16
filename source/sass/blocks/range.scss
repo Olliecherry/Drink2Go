@@ -9,7 +9,8 @@
   padding-bottom: 8px;
   text-align: center;
   background-color: #ffffff;
-  border: none;
+  border: 2px solid #9070EC;
+  border-radius: 4px;
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
@@ -53,26 +54,39 @@
 
 .range__scale {
   position: relative;
-  height: 4px;
-  margin-top: 45px;
-  background-color: rgba(255, 255, 255, 0.3);
+  height: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #E2E2E2;
 }
 
 .range__bar {
   position: absolute;
   height: 4px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #9070EC;
   left: 0;
   width: 220px;
 }
 
+.range__divider {
+  align-self: center;
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  background-color: #BDBDBD;
+  content: "";
+  top: 20px;
+  left: 135px;
+}
+
 .range__toggle {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  color: #FFFFFF;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border-color: #9070EC;
   cursor: pointer;
+  background-color: #ffffff;
 }
 
 .range__toggle--min {
@@ -85,9 +99,10 @@
 }
 
 .range__wrapper {
-  width: 288px;
+  width: 280px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .range__label {
@@ -99,4 +114,23 @@
   z-index: 1;
   right: 22px;
   top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .range__wrapper {
+    width: 223px;
+  }
+
+  .range__input {
+    width: 87px;
+  }
+
+  .range__bar {
+    width: 192px;
+  }
+
+  .range__toggle--max {
+    top: -8px;
+    left: 180px;
+  }
 }

@@ -192,112 +192,114 @@
         </div>
         <div class="catalog__wrapper">
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form__price pricing">
-              <fieldset class="form__group pricing__group">
-                <legend class="form__group-title">
-                  Цена
-                </legend>
-                <div class="range">
-                  <div class="range__scale">
-                    <div class="range__bar">
-                      <button type="button" class="range__toggle range__toggle--min">
-                        <span class="visually-hidden">Уменьшить стоимость</span>
-                      </button>
-                      <button type="button" class="range__toggle range__toggle--max">
-                        <span class="visually-hidden">Увеличить стоимость</span>
-                      </button>
+            <div class="form__choice">
+              <div class="form__price pricing">
+                <fieldset class="form__group pricing__group">
+                  <legend class="form__group-title">
+                    Цена
+                  </legend>
+                  <div class="range">
+                    <div class="range__scale">
+                      <div class="range__bar">
+                        <button type="button" class="range__toggle range__toggle--min">
+                          <span class="visually-hidden">Уменьшить стоимость</span>
+                        </button>
+                        <button type="button" class="range__toggle range__toggle--max">
+                          <span class="visually-hidden">Увеличить стоимость</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
+                  <div class="range__wrapper range">
+                    <label class="range__label">
+                      <span class="range__label-text"></span>
+                      <input class="range__input cost-min" type="number" placeholder="0" name="min-price" min="0" max="123" value="0">
+                    </label>
+                    <span class="range__divider"></span>
+                    <label class="range__label">
+                      <span class="range__label-text"></span>
+                      <input class="range__input cost-max" type="number" placeholder="123" name="max-price" min="100" max="123" value="123">
+                    </label>
                 </div>
-                <div class="range__wrapper range">
-                  <label class="range__label">
-                    <span class="range__label-text"></span>
-                    <input class="range__input cost-min" type="number" placeholder="0" name="min-price" min="0" max="150" value="0">
-                  </label>
-                  <span class="range__divider">-</span>
-                  <label class="range__label">
-                    <span class="range__label-text"></span>
-                    <input class="range__input cost-max" type="number" placeholder="123" name="max-price" min="100" max="150" value="150">
-                  </label>
+                </fieldset>
               </div>
-              </fieldset>
-            </div>
-            <div class="form__wrapper form__wrapper--milk">
-              <fieldset class="form__group">
-                <legend class="form__group-title">Наличие молока</legend>
-                <ul class="form__list">
-                  <li class="form__radiobutton">
-                    <label class="form__label-radiobutton" for="nodifference">
-                      <input class="form__input-radiobutton" type="radio" id="nodifference" name="choice__milk" value="nodifference" checked>
-                      <span class="form__checkmark"></span>
-                      <span class="form__text form__text--radiobutton">Неважно</span>
-                    </label>
-                  </li>
-                  <li class="form__radiobutton">
-                    <label class="form__label-radiobutton" for="animal">
-                      <input class="form__input-radiobutton" type="radio" id="animal" name="choice__milk" value="animal">
-                      <span class="form__checkmark"></span>
-                      <span class="form__text form__text--radiobutton">Только животное</span>
-                    </label>
-                  </li>
-                  <li class="form__radiobutton">
-                    <label class="form__label-radiobutton" for="vegan">
-                      <input class="form__input-radiobutton" type="radio" id="vegan" name="choice__milk" value="vegan">
-                      <span class="form__checkmark"></span>
-                      <span class="form__text form__text--radiobutton">Только растительное</span>
-                    </label>
-                  </li>
-                  <li class="form__radiobutton">
-                    <label class="form__label-radiobutton" for="nomilk">
-                      <input class="form__input-radiobutton" type="radio" id="nomilk" name="choice__milk" value="nomilk">
-                      <span class="form__checkmark"></span>
-                      <span class="form__text form__text--radiobutton">Без молока</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="form__wrapper form__wrapper--origin">
-              <fieldset class="form__group form__group--checkbox">
-                <legend class="form__group-title">Страна произрастания</legend>
-                <ul class="form__list">
-                  <li class="form__checkbox">
-                    <label class="form__label-checkbox" for="origin">
-                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin" checked>
-                      <span class="form__checkmark"></span>
-                      <span class="form__text form__text--checkbox">Бразилия</span>
-                    </label>
-                  </li>
-                  <li class="form__checkbox">
-                    <label class="form__label-checkbox" for="origin">
-                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
-                      <span class="form__checkmark"></span>
-                      <span class="form__text form__text--checkbox">Эфиопия</span>
-                    </label>
-                  </li>
-                  <li class="form__checkbox">
-                    <label class="form__label-checkbox" for="origin">
-                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
-                      <span class="form__checkmark"></span>
-                      <span class="form__text form__text--checkbox">Колумбия</span>
-                    </label>
-                  </li>
-                  <li class="form__checkbox">
-                    <label class="form__label-checkbox" for="origin">
-                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
-                      <span class="form__checkmark"></span>
-                      <span class="form__text form__text--checkbox">Коста-Рика</span>
-                    </label>
-                  </li>
-                  <li class="form__checkbox">
-                    <label class="form__label-checkbox" for="origin">
-                      <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
-                      <span class="form__checkmark"></span>
-                      <span class="form__text form__text--checkbox">Перу</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+              <div class="form__wrapper form__wrapper--milk">
+                <fieldset class="form__group">
+                  <legend class="form__group-title">Наличие молока</legend>
+                  <ul class="form__list">
+                    <li class="form__radiobutton">
+                      <label class="form__label-radiobutton" for="nodifference">
+                        <input class="form__input-radiobutton" type="radio" id="nodifference" name="choice__milk" value="nodifference" checked>
+                        <span class="form__checkmark"></span>
+                        <span class="form__text form__text--radiobutton">Неважно</span>
+                      </label>
+                    </li>
+                    <li class="form__radiobutton">
+                      <label class="form__label-radiobutton" for="animal">
+                        <input class="form__input-radiobutton" type="radio" id="animal" name="choice__milk" value="animal">
+                        <span class="form__checkmark"></span>
+                        <span class="form__text form__text--radiobutton">Только животное</span>
+                      </label>
+                    </li>
+                    <li class="form__radiobutton">
+                      <label class="form__label-radiobutton" for="vegan">
+                        <input class="form__input-radiobutton" type="radio" id="vegan" name="choice__milk" value="vegan">
+                        <span class="form__checkmark"></span>
+                        <span class="form__text form__text--radiobutton">Только растительное</span>
+                      </label>
+                    </li>
+                    <li class="form__radiobutton">
+                      <label class="form__label-radiobutton" for="nomilk">
+                        <input class="form__input-radiobutton" type="radio" id="nomilk" name="choice__milk" value="nomilk">
+                        <span class="form__checkmark"></span>
+                        <span class="form__text form__text--radiobutton">Без молока</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="form__wrapper form__wrapper--origin">
+                <fieldset class="form__group form__group--checkbox">
+                  <legend class="form__group-title">Страна произрастания</legend>
+                  <ul class="form__list">
+                    <li class="form__checkbox">
+                      <label class="form__label-checkbox" for="origin">
+                        <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin" checked>
+                        <span class="form__checkmark"></span>
+                        <span class="form__text form__text--checkbox">Бразилия</span>
+                      </label>
+                    </li>
+                    <li class="form__checkbox">
+                      <label class="form__label-checkbox" for="origin">
+                        <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
+                        <span class="form__checkmark"></span>
+                        <span class="form__text form__text--checkbox">Эфиопия</span>
+                      </label>
+                    </li>
+                    <li class="form__checkbox">
+                      <label class="form__label-checkbox" for="origin">
+                        <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
+                        <span class="form__checkmark"></span>
+                        <span class="form__text form__text--checkbox">Колумбия</span>
+                      </label>
+                    </li>
+                    <li class="form__checkbox">
+                      <label class="form__label-checkbox" for="origin">
+                        <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
+                        <span class="form__checkmark"></span>
+                        <span class="form__text form__text--checkbox">Коста-Рика</span>
+                      </label>
+                    </li>
+                    <li class="form__checkbox">
+                      <label class="form__label-checkbox" for="origin">
+                        <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
+                        <span class="form__checkmark"></span>
+                        <span class="form__text form__text--checkbox">Перу</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
             </div>
             <div class="form__buttons">
               <button class="form__button button button-violet" type="submit">Применить</button>
@@ -351,13 +353,15 @@
                 </a>
                 <p class="catalog-card__description">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
-                <p class="catalog-card__price">225₽</p>
-                <a class="catalog-card__button button-modal-open" href="#">
-                  <svg class="catalog-card__icon" width="21" height="19">
-                    <use xlink:href="img/icons/stack.svg#icon-catalog-basket"></use>
-                  </svg>
-                  <span class="catalog-card__basket">В корзину</span>
-                </a>
+                <div class="catalog-card__choice">
+                  <p class="catalog-card__price">225₽</p>
+                  <a class="catalog-card__button button-modal-open" href="#">
+                    <svg class="catalog-card__icon" width="21" height="19">
+                      <use xlink:href="img/icons/stack.svg#icon-catalog-basket"></use>
+                    </svg>
+                    <span class="catalog-card__basket">В корзину</span>
+                  </a>
+                </div>
               </div>
             </li>
             <li class="catalog__card catalog-card">
@@ -373,13 +377,15 @@
                 </a>
                 <p class="catalog-card__description">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
-                <p class="catalog-card__price">225₽</p>
-                <a class="catalog-card__button button-modal-open" href="#">
-                  <svg class="catalog-card__icon" width="21" height="19">
-                    <use xlink:href="img/icons/stack.svg#icon-catalog-basket"></use>
-                  </svg>
-                  <span class="catalog-card__basket">В корзину</span>
-                </a>
+                <div class="catalog-card__choice">
+                  <p class="catalog-card__price">225₽</p>
+                  <a class="catalog-card__button button-modal-open" href="#">
+                    <svg class="catalog-card__icon" width="21" height="19">
+                      <use xlink:href="img/icons/stack.svg#icon-catalog-basket"></use>
+                    </svg>
+                    <span class="catalog-card__basket">В корзину</span>
+                  </a>
+                </div>
               </div>
             </li>
             <li class="catalog__card catalog-card">

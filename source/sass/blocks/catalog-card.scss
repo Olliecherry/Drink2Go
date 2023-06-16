@@ -1,0 +1,45 @@
+.catalog-card {
+  background-color: #ffffff;
+  margin: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+}
+
+.catalog-card__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.catalog-card__title {
+  text-decoration: none;
+  color: #333333;
+}
+
+.catalog-card__name {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.catalog-card__choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.catalog-card__button {
+  width: 141px;
+  background-color: #7859CF;
+}
+
+.catalog-card__basket {
+  color: #ffffff;
+}

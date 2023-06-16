@@ -166,6 +166,8 @@
   .form__input-checkbox:checked ~ .form__checkmark {
     &::after {
       display: block;
+      right: 1px;
+      left: auto;
     }
   }
 
@@ -203,4 +205,30 @@
   color: #7859CF;
   border-radius: 4px;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__choice {
+    display: grid;
+    grid-template-columns: 223px 222px 223px;
+    column-gap: 30px;
+  }
+
+  .form__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form__button {
+    min-height: 24px;
+    padding: 8px 20px;
+  }
+
+  .button-violet {
+    margin: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
 }

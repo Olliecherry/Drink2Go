@@ -45,3 +45,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+.catalog__options {
+  display: flex;
+  background-color: #f8f8f8;
+}
+
+.catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
