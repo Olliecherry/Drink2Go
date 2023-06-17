@@ -1,10 +1,14 @@
 .footer {
   background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
 }
 
 .footer__intro {
   display: grid;
   grid-template-rows: 80px 212px 176px 156px 66px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__social {
@@ -48,6 +52,10 @@
     padding: 20px;
   }
 
+  .footer__text {
+    display: none;
+  }
+
   .footer__shop {
     border-bottom: 1px solid #F0EBFF;
     padding: 20px;
@@ -65,8 +73,122 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer__intro {
+    display: grid;
+    grid-template-rows: 110px 172px 86px;
+    row-gap: 30px;
+    grid-template-columns: 223px 222px 223px;
+    column-gap: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
+  .footer__text {
+    display: none;
+  }
+
+  .footer__social {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .footer__shop {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .footer__media {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .footer__contacts {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .footer__copyright {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-content: flex-start;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .footer__intro {
+    display: grid;
+    grid-template-rows: 1fr 76px;
+    row-gap: 30px;
+    grid-template-columns: 318px 317px 318px 317px;
+    column-gap: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+
+  .footer__social {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footer__logo {
+    align-self: flex-start;
+    text-align: center;
+  }
+
+  .footer__text {
+    display: block;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .footer__shop {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .footer__media {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .footer__contacts {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .footer__copyright {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-content: center;
+  }
 }
