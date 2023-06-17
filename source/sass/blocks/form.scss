@@ -231,4 +231,29 @@
     margin-bottom: 0;
     margin-right: 20px;
   }
+
+  .form__wrapper--milk {
+    margin-top: 0;
+  }
+
+  .form__wrapper--origin {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__choice {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 130px 200px 244px;
+    row-gap: 30px;
+  }
+
+  .form__buttons {
+    justify-content: space-between;
+  }
+
+  .form__button {
+    padding: 8px 26px;
+  }
 }

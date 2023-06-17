@@ -61,11 +61,55 @@
   background-color: #7859CF;
   text-decoration: none;
   border-radius: 4px;
-  padding: 8px 20px 8px 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.catalog-card__icon {
+  margin-right: 6px;
 }
 
 .catalog-card__basket {
   color: #ffffff;
   text-align: center;
   align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .catalog-card__link {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .catalog-card__item {
+    margin-left: 30px;
+    margin-left: 30px;
+    align-items: normal;
+  }
+
+  .catalog-card__name {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .catalog-card__description {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .catalog-card__choice {
+    justify-content: space-between;
+  }
 }
