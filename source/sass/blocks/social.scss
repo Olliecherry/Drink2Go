@@ -1,0 +1,19 @@
+.social__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  width: 160px;
+  justify-content: space-between;
+}
+
+.social__item {
+  margin-right: 20px;
+  width: 40px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
