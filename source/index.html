@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="header">
@@ -250,7 +254,7 @@
                     </li>
                     <li class="form__radiobutton">
                       <label class="form__label-radiobutton" for="nomilk">
-                        <input class="form__input-radiobutton" type="radio" id="nomilk" name="choice__milk" value="nomilk">
+                        <input class="form__input-radiobutton" type="radio" id="nomilk" name="choice__milk" value="nomilk" disabled>
                         <span class="form__checkmark"></span>
                         <span class="form__text form__text--radiobutton">Без молока</span>
                       </label>
@@ -292,7 +296,7 @@
                     </li>
                     <li class="form__checkbox">
                       <label class="form__label-checkbox" for="origin">
-                        <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin">
+                        <input class="form__input-checkbox" type="checkbox" id="origin" name="choice__origin" value="origin" disabled>
                         <span class="form__checkmark"></span>
                         <span class="form__text form__text--checkbox">Перу</span>
                       </label>
@@ -308,12 +312,12 @@
           </form>
         </div>
         <div class="catalog__sorting sorting">
-          <h2 class="sorting__name">Сортировка:</h2>
-          <select class="sorting__list select-control" label="Сортировка" for="select-control">
-            <span class="sorting__mark"></span>
+          <label class="sorting__name" for="sorting-options">Сортировка:</label>
+          <select class="sorting__list select-control" id="sorting-options">
             <option value="sorting__default">по умолчанию</option>
-            <option value="sorting__popular">Сначала популярные</option>
-            <option value="sorting__expensive">Сначала дорогие</option>
+            <option value="sorting__expensive">сначала дорогие</option>
+            <option value="sorting__cheap">сначала дешёвые</option>
+            <option value="sorting__rating">высокий рейтинг</option>
           </select>
         </div>
         <div class="catalog__options">

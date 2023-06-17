@@ -70,10 +70,32 @@
     }
   }
 
+  .form__label-radiobutton:hover .form__checkmark {
+    border-color: #9070EC;
+  }
+
+  .form__label-radiobutton:hover .form__checkmark::after {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  .form__input-radiobutton:focus ~ .form__checkmark {
+    border-color: #9070EC;
+  }
+
+  .form__input-radiobutton:focus ~ .form__checkmark::after {
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
   .form__input-radiobutton:disabled ~ .form__checkmark {
-    &::after {
-      opacity: 0.3;
-    }
+    border-color: #E2E2E2;
+  }
+
+  .form__input-radiobutton:disabled ~ .form__text {
+    color: #BDBDBD;
+  }
+
+  .form__input-radiobutton:disabled ~ .form__checkmark::after {
+    background-color: #E2E2E2;
   }
 
   .form__checkmark {
@@ -106,15 +128,6 @@
   min-height: 24px;
   position: relative;
 
-  &:hover {
-    color: #222222;
-  }
-
-  &:active {
-    color: #222222;
-    opacity: 0.3;
-  }
-
   .form__label-checkbox {
     display: block;
     padding-left: 50px;
@@ -137,21 +150,20 @@
     top: 2px;
     height: 24px;
     width: 42px;
-    border: 1px solid #BDBDBD;
     border-radius: 12px;
     background-color: #BDBDBD;
+    border: 2px solid #BDBDBD;
   }
 
   .form__checkmark::after {
     content: "";
     position: absolute;
-    display: none;
-    top: 1px;
+    top: 0;
     left: 1px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #7859CF;
+    background-color: #FFFFFF;
   }
 
   .form__checkbox .form__checkmark {
@@ -163,18 +175,55 @@
     border: 1px solid #cdcdcd;
   }
 
-  .form__input-checkbox:checked ~ .form__checkmark {
-    &::after {
-      display: block;
-      right: 1px;
-      left: auto;
-    }
+  .form__label-checkbox:hover .form__checkmark {
+    border-color: #9070EC;
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  // .form__label-checkbox:hover .form__checkmark::after {
+  //   background-color: #FFFFFF;
+  // }
+
+  .form__input-checkbox:focus ~ .form__checkmark {
+    border-color: #9070EC;
+  }
+
+  .form__input-checkbox:focus ~ .form__checkmark::after {
+    background-color: rgba(120, 89, 207, 0.25);
   }
 
   .form__input-checkbox:disabled ~ .form__checkmark {
-    &::after {
-      display: none;
-    }
+    background-color: #E2E2E2;
+    border-color: #E2E2E2;
+  }
+
+  .form__input-checkbox:disabled ~ .form__text {
+    color: #BDBDBD;
+  }
+
+  .form__input-checkbox:disabled ~ .form__checkmark::after {
+    background-color: #F8F8F8;
+  }
+
+  .form__input-checkbox:checked:disabled ~ .form__checkmark {
+    background-color: #E2E2E2;
+    border-color: #E2E2E2;
+  }
+
+  .form__input-checkbox:checked:disabled ~ .form__checkmark::after {
+    background-color: #BDBDBD;
+  }
+
+
+  .form__input-checkbox:checked ~ .form__checkmark::after {
+    display: block;
+    right: 2px;
+    left: auto;
+  }
+
+  .form__input-checkbox:checked ~ .form__checkmark {
+    background-color: #7859CF;
+    border-color: #7859CF;
   }
 }
 
