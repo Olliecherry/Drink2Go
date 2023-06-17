@@ -24,6 +24,7 @@
   font-size: 12px;
   line-height: 16px;
   color: #7859CF;
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 4px;
   padding: 0;
@@ -61,11 +62,22 @@
   justify-content: center;
 }
 
+.catalog__pagination {
+  margin-top: 20px;
+  margin-bottom: 44px;
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: $tablet-width) {
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+  }
+
+  .catalog__pagination {
+    justify-content: flex-end;
   }
 }
 

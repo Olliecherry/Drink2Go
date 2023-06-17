@@ -207,6 +207,13 @@
   border: none;
 }
 
+@media (max-width: $mobile-width-only) {
+  .form__price {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form__choice {
     display: grid;
@@ -255,5 +262,9 @@
 
   .form__button {
     padding: 8px 26px;
+  }
+
+  .form__price {
+    justify-content: flex-start;
   }
 }

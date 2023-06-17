@@ -1,3 +1,26 @@
 .map__leaflet {
   height: 420px;
 }
+
+.map__wrapper {
+  position: relative;
+}
+
+.map__image {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .map__leaflet {
+    height: 480px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__leaflet {
+    height: 540px;
+  }
+}
