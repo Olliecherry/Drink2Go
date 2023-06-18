@@ -3,14 +3,11 @@
 }
 
 .swiper-button-prev {
-  position: absolute;
-  content: url("../../img/images-svg/icon-pagination-back.svg");
-  z-index: 4;
-  bottom: 340px;
-  width: 20px;
-  height: 20px;
-  top: -100px;
-  left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
 }
 
 .swiper-button-next {
@@ -28,8 +25,6 @@
   bottom: 340px;
   width: 20px;
   height: 20px;
-  top: -100px;
-  left: 0;
 }
 
 .swiper-button-next::after {
@@ -45,6 +40,10 @@
   .swiper-pagination-bullets {
     display: none;
   }
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -53,12 +52,17 @@
   }
 
   .swiper-pagination-bullet {
+    display: block;
     content: "";
     height: 4px;
     width: 62px;
-    content: "";
     position: absolute;
     top: 10px;
     left: 10px;
+    background-color: #FFFFFF;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #7859CF;
   }
 }

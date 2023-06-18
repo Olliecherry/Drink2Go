@@ -142,15 +142,18 @@
 
 @media (min-width: $tablet-width) {
   .advertisement__wrapper--white {
-    background: linear-gradient(to bottom, #ffffff 619px, #F3EBE1 462px, #F3EBE1);
+    background: linear-gradient(to top,#ffffff 188px,
+    #F3EBE1 640px, #F3EBE1);
   }
 
   .advertisement__wrapper--lavender {
-    background: linear-gradient(to bottom, #EAE6FC 619px, #F3EBE1 462px, #F3EBE1);
+    background: linear-gradient(to top,#ffffff 188px,
+    #EAE6FC 640px, #EAE6FC);
   }
 
   .advertisement__wrapper--espresso {
-    background-color: #E5E6E8;
+    background: linear-gradient(to top,#ffffff 188px,
+    #E5E6E8 640px, #E5E6E8);
   }
 }
 
