@@ -6,3 +6,154 @@
   margin: 0 auto;
   padding: 0;
 }
+
+.advertisement__container {
+  position: relative;
+}
+
+.advertisement__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertisement__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.advertisement__slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.advertisement__description {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.advertisement__choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.advertisement__price {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.advertisement__oldprice {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  margin: 0;
+  margin-right: 6px;
+  text-decoration-line: line-through;
+  color: #7859CF;
+}
+
+.advertisement__newprice {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.advertisement__order {
+  width: 113px;
+  height: 36px;
+  background-color: #7859CF;
+  text-decoration: none;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.advertisement__link {
+  text-decoration: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+@media (max-width: $mobile-width-only) {
+  .advertisement__wrapper--white {
+    background-color: #F3EBE1;
+  }
+
+  .advertisement__wrapper--lavender {
+    background-color: #EAE6FC;
+  }
+
+  .advertisement__wrapper--espresso {
+    background-color: #E5E6E8;
+  }
+
+  .advertisement__text {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #7859CF;
+    margin: 0;
+  }
+
+  .advertisement__title {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #333333;
+    margin: 0;
+  }
+
+  .advertisement__slogan {
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advertisement__wrapper--white {
+    background: linear-gradient(to bottom, #ffffff 619px, #F3EBE1 462px, #F3EBE1);
+  }
+
+  .advertisement__wrapper--lavender {
+    background: linear-gradient(to bottom, #EAE6FC 619px, #F3EBE1 462px, #F3EBE1);
+  }
+
+  .advertisement__wrapper--espresso {
+    background-color: #E5E6E8;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+}
