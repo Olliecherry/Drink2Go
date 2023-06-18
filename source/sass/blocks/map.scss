@@ -22,6 +22,10 @@
   .map__leaflet {
     height: 480px;
   }
+
+  .map__wrapper {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {

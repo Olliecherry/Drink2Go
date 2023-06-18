@@ -1,5 +1,8 @@
 .catalog {
-  width: 100%;
+  background-color: #f8f8f8;
+}
+
+.catalog__container {
   display: flex;
   flex-direction: column;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -7,7 +10,6 @@
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #f8f8f8;
 }
 
 .catalog__slogan {
@@ -88,7 +90,7 @@
     column-gap: 30px;
   }
 
-  .catalog {
+  .catalog__container {
     display: grid;
     grid-template-columns: 348px min-content min-content;
     grid-template-rows: 84px 120px 200px 244px min-content min-content min-content;

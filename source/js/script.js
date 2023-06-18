@@ -52,8 +52,8 @@ var myIcon = L.icon({
 L.marker([59.968318, 30.317224], {icon: myIcon}).addTo(map);
 
 
-const elSelectNative = document.getElementsByClassName("js-selectNative")[0];
-const elSelectCustom = document.getElementsByClassName("js-selectCustom")[0];
+const elselect__native = document.getElementsByClassName("select__native-js")[0];
+const elSelectCustom = document.getElementsByClassName("select__custom-js")[0];
 const elSelectCustomBox = elSelectCustom.children[0];
 const elSelectCustomOpts = elSelectCustom.children[1];
 const customOptsList = Array.from(elSelectCustomOpts.children);
@@ -159,7 +159,7 @@ function supportKeyboardNavigation(e) {
     const value = option && option.getAttribute("data-value");
 
     if (value) {
-      elSelectNative.value = value;
+      elselect__native.value = value;
       updateCustomSelectChecked(value, option.textContent);
     }
     closeSelectCustom();
@@ -170,7 +170,7 @@ function supportKeyboardNavigation(e) {
   }
 }
 
-elSelectNative.addEventListener("change", (e) => {
+elselect__native.addEventListener("change", (e) => {
   const value = e.target.value;
   const elRespectiveCustomOption = elSelectCustomOpts.querySelectorAll(
     `[data-value="${value}"]`
@@ -183,7 +183,7 @@ customOptsList.forEach(function (elOption, index) {
   elOption.addEventListener("click", (e) => {
     const value = e.target.getAttribute("data-value");
 
-    elSelectNative.value = value;
+    elselect__native.value = value;
     updateCustomSelectChecked(value, e.target.textContent);
     closeSelectCustom();
   });

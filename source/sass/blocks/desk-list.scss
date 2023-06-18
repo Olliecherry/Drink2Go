@@ -37,6 +37,18 @@
   }
 }
 
+.desk-list__link:hover .desk-list__icon {
+  fill: #7859CF;
+}
+
+.desk-list__link:focus .desk-list__icon {
+  fill: #7859CF;
+}
+
+.desk-list__link:focus .desk-list__icon {
+  fill: #7859CF;
+}
+
 .desk-list__text {
   display: none;
 }
