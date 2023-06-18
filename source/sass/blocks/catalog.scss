@@ -42,7 +42,7 @@
   margin: 20px 17px 36px 23px;
 }
 
-.catalog__sorting {
+.catalog__select {
   display: flex;
   justify-content: space-between;
 }
@@ -103,7 +103,7 @@
     margin-top: 100px;
   }
 
-  .catalog__sorting {
+  .catalog__select {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;

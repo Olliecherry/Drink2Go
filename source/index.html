@@ -321,14 +321,25 @@
             </div>
           </form>
         </div>
-        <div class="catalog__sorting sorting">
-          <label class="sorting__name" for="sorting-options">Сортировка:</label>
-          <select class="sorting__list select-control" id="sorting-options">
-            <option value="sorting__default">по умолчанию</option>
-            <option value="sorting__expensive">сначала дорогие</option>
-            <option value="sorting__cheap">сначала дешёвые</option>
-            <option value="sorting__rating">высокий рейтинг</option>
-          </select>
+        <div class="catalog__select select">
+          <span class="selectLabel" id="jobLabel">Сортировка:</span>
+          <div class="selectWrapper">
+            <select class="selectNative js-selectNative" aria-labelledby="jobLabel">
+              <option value="select__default" selected="checked">по умолчанию</option>
+              <option value="select__expensive">сначала дорогие</option>
+              <option value="select__cheap">сначала дешёвые</option>
+              <option value="select__rating">высокий рейтинг</option>
+            </select>
+            <div class="selectCustom js-selectCustom" aria-hidden="true">
+              <div class="selectCustom-trigger">Сортировка:</div>
+              <div class="selectCustom-options">
+                <div class="selectCustom-option" data-value="select__default">по умолчанию</div>
+                <div class="selectCustom-option" data-value="select__expensive">сначала дорогие</div>
+                <div class="selectCustom-option" data-value="select__cheap">сначала дешёвые</div>
+                <div class="selectCustom-option" data-value="select__rating">высокий рейтинг</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="catalog__options">
           <ul class="catalog__list">
