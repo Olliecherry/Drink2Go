@@ -22,18 +22,20 @@
   position: absolute;
   content: url("../../img/images-svg/icon-pagination-back.svg");
   z-index: 4;
-  bottom: 340px;
+  bottom: 520px;
   width: 20px;
   height: 20px;
+  left: 20px;
 }
 
 .swiper-button-next::after {
   position: absolute;
   content: url("../../img/images-svg/icon-pagination-forward.svg");
   z-index: 4;
-  bottom: 340px;
+  bottom: 520px;
   width: 20px;
   height: 20px;
+  right: 20px;
 }
 
 @media (max-width: $mobile-width-only) {
