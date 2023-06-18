@@ -17,3 +17,23 @@
     margin-right: 0;
   }
 }
+
+.social__link:hover {
+  background-color: #F0EBFF;
+
+  svg path {
+    fill: #7859CF;
+  }
+}
+
+.social__link:focus {
+  background-color: #F0EBFF;
+
+  svg path {
+    fill: #7859CF;
+  }
+}
+
+.social__link:active {
+  background-color: rgba(120, 89, 207, 0.25);
+}

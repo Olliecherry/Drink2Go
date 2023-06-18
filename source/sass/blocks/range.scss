@@ -134,3 +134,22 @@
     left: 180px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .range__wrapper {
+    width: 318px;
+  }
+
+  .range__bar {
+    width: 274px;
+  }
+
+  .range__input {
+    width: 134px;
+  }
+
+  .range__toggle--max {
+    top: -8px;
+    left: 220px;
+  }
+}

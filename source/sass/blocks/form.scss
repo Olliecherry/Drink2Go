@@ -240,22 +240,6 @@
   line-height: 24px;
 }
 
-.button-violet {
-  background-color: #7859CF;
-  color: #ffffff;
-  border-radius: 4px;
-  margin: 0;
-  margin-bottom: 20px;
-  border: none;
-}
-
-.button--white {
-  background-color: #ffffff;
-  color: #7859CF;
-  border-radius: 4px;
-  border: none;
-}
-
 @media (max-width: $mobile-width-only) {
   .form__price {
     display: flex;
@@ -280,12 +264,6 @@
   .form__button {
     min-height: 24px;
     padding: 8px 20px;
-  }
-
-  .button-violet {
-    margin: 0;
-    margin-bottom: 0;
-    margin-right: 20px;
   }
 
   .form__wrapper--milk {

@@ -18,11 +18,19 @@
   border-radius: 4px;
 
   &:hover {
-    background-color: #FFFFFF;
+    background-color: #9070EC;
+  }
+
+  &:focus {
+    background-color: #9070EC;
   }
 
   &:active {
-    background-color: #F8F8F8;
+    background-color: #593CAC;
+  }
+
+  &:disabled {
+    background-color: #BDBDBD;
   }
 }
 

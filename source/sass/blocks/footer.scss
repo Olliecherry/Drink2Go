@@ -129,8 +129,8 @@
 @media (min-width: $desktop-width) {
   .footer__intro {
     display: grid;
-    grid-template-rows: 1fr 76px;
-    row-gap: 30px;
+    grid-template-rows: 1fr 172px 76px;
+    row-gap: 0;
     grid-template-columns: 318px 317px 318px 317px;
     column-gap: 30px;
     margin-left: 40px;
@@ -168,6 +168,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    margin-top: 9px;
   }
 
   .footer__media {
@@ -175,6 +176,7 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
+    margin-top: 9px;
   }
 
   .footer__contacts {
@@ -182,6 +184,7 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
+    margin-top: 9px;
   }
 
   .footer__copyright {

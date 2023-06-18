@@ -92,6 +92,22 @@
   text-align: center;
   align-self: center;
   justify-content: center;
+
+  &:hover {
+    background-color: #9070EC;
+  }
+
+  &:focus {
+    background-color: #9070EC;
+  }
+
+  &:active {
+    background-color: #593CAC;
+  }
+
+  &:disabled {
+    background-color: #BDBDBD;
+  }
 }
 
 .advertisement__link {
@@ -202,22 +218,19 @@
     display: grid;
     grid-template-columns: 600px 625px;
     row-gap: 30px;
+    height: 714px;
   }
 
   .advertisement__wrapper--white {
-    height: auto;
-    background-color: #F3EBE1;
-    background: linear-gradient(none);
+    background: linear-gradient(#F3EBE1, #F3EBE1);
   }
 
   .advertisement__wrapper--lavender {
-    background-color: #EAE6FC;
-    background: linear-gradient(none);
+    background: linear-gradient(#EAE6FC, #EAE6FC);
   }
 
   .advertisement__wrapper--espresso {
-    background-color: #E5E6E8;
-    background: linear-gradient(none);
+    background: linear-gradient(#EAE6FC, #EAE6FC);
   }
 
   .advertisement__image {

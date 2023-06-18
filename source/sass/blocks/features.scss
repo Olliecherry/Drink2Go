@@ -178,10 +178,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    margin-bottom: 120px;
+  }
+  
   .features__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 30px;
+    grid-template-rows: none;
+    row-gap: 0;
   }
 
   .features__motto {
