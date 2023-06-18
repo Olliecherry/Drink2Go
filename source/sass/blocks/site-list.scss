@@ -2,12 +2,15 @@
   list-style-type: none;
 
   &:hover {
-    opacity: 0.6;
+    background-color: #FFFFFF;
+  }
+
+  &:focus {
+    background-color: #FFFFFF;
   }
 
   &:active {
-    opacity: 0.3;
-    color: #7859CF;
+    background-color: #F0EBFF;
   }
 }
 
@@ -26,6 +29,18 @@
   color: #333333;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: #9070EC;
+  }
+
+  &:focus {
+    color: #9070EC;
+  }
+
+  &:active {
+    color: #7859CF;
+  }
 }
 
 .site-list__item--active {

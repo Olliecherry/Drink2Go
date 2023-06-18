@@ -9,6 +9,32 @@
   padding: 22px;
   list-style-type: none;
   align-self: center;
+
+  &:hover {
+    background-color: #FFFFFF;
+  }
+
+  &:focus {
+    background-color: #FFFFFF;
+  }
+
+  &:active {
+    background-color: #F0EBFF;
+  }
+}
+
+.desk-list__link {
+  &:hover {
+    color: #7859CF;
+  }
+
+  &:focus {
+    color: #7859CF;
+  }
+
+  &:active {
+    color: #7859CF;
+  }
 }
 
 .desk-list__text {

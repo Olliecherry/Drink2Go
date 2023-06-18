@@ -65,6 +65,10 @@
     justify-self: end;
     border: none;
     z-index: 4;
+
+    &:active {
+      background-color: #F0EBFF;
+    }
   }
 
   .header__toggle--nojs {
