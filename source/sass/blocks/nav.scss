@@ -16,7 +16,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    // position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -46,10 +45,6 @@
     display: none;
   }
 
-  // .nav__list--closed .header__toggle--nojs {
-  //   display: none;
-  // }
-
   .nav__list--closed.site-list {
     display: none;
   }
@@ -71,11 +66,12 @@
 @media (min-width: $tablet-width) {
   .nav__add {
     display: flex;
-    margin-left: 50px;
+    margin-left: 70px;
+    margin-right: 0;
   }
 
   .nav {
-    margin-left: 139px;
+    margin-left: 145px;
   }
 
   .nav__list {
@@ -89,6 +85,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 0;
   }
 
   .nav__add {

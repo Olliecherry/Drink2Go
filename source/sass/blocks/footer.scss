@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 0;
 }
 
 .footer__logo {
@@ -52,10 +53,6 @@
     padding: 20px 22px;
   }
 
-  .footer__logo {
-    
-  }
-
   .footer__text {
     display: none;
   }
@@ -79,8 +76,8 @@
 @media (min-width: $tablet-width) {
   .footer__intro {
     display: grid;
-    grid-template-rows: 110px 172px 86px;
-    row-gap: 30px;
+    grid-template-rows: 110px 172px 75px;
+    row-gap: 0;
     grid-template-columns: 223px 222px 223px;
     column-gap: 30px;
     margin-left: 20px;
@@ -96,6 +93,7 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin-top: 10px;
   }
 
   .footer__shop {

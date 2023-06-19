@@ -97,7 +97,8 @@
   }
 
   .site-list__item {
-    padding: 32px 20px;
+    padding: 26px 20px 30px 20px;
+    border-bottom: 2px solid transparent;
   }
 
   .site-list__item--active {

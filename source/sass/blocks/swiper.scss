@@ -48,13 +48,13 @@
 
 @media (min-width: $tablet-width) {
   .swiper-button-prev {
-    top: -518px;
+    top: -498px;
     left: 30px;
   }
 
   .swiper-button-next {
-    top: -518px;
-    right: 30px;
+    top: -498px;
+    right: 33px;
   }
 
   .swiper-pagination-bullets {
@@ -64,13 +64,49 @@
 
 @media (min-width: $desktop-width) {
   .swiper-button-prev {
-    top: -350px;
+    top: -695px;
     left: 30px;
+    height: 714px;
+    width: 20px;
+
+    &:hover {
+      background-color: #FFFFFF;
+    }
+
+    &:focus {
+      background-color: #FFFFFF;
+    }
+
+    &:active {
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
+
+    &:disabled {
+      background-color: transparent;
+    }
   }
 
   .swiper-button-next {
-    top: -350px;
+    top: -695px;
     right: 30px;
+    height: 714px;
+    width: 20px;
+
+    &:hover {
+      background-color: #FFFFFF;
+    }
+
+    &:focus {
+      background-color: #FFFFFF;
+    }
+
+    &:active {
+      background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
+
+    &:disabled {
+      background-color: transparent;
+    }
   }
 
   .swiper-pagination-bullets.swiper-pagination-horizontal{

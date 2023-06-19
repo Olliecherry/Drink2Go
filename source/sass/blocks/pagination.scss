@@ -16,6 +16,8 @@
   background-color: #FFFFFF;
   color: #7859CF;
   border-radius: 4px;
+  padding: 0;
+  margin: 0;
 
   &:hover {
     background-color: #9070EC;
@@ -89,7 +91,12 @@
 
   .pagination__list {
     display: grid;
-    grid-template-columns: 91px 40px 40px 40px 91px;
+    grid-template-columns: 91px 40px 40px 40px 104px;
+    column-gap: 20px;
+  }
+
+  .pagination__link {
+    padding: 8px 22px;
   }
 }
 

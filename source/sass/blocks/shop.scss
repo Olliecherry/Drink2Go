@@ -33,3 +33,9 @@
   color: #333333;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .shop__list {
+    margin: 0;
+  }
+}

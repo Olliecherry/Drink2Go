@@ -1,64 +1,10 @@
-.range__input {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  width: 118px;
-  height: 40px;
-  padding-top: 8px;
-  padding-left: 10px;
-  padding-bottom: 8px;
-  text-align: center;
-  background-color: #ffffff;
-  border: 2px solid #9070EC;
-  border-radius: 4px;
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
-}
-
-.range__input::-webkit-outer-spin-button,
-.range__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
-.cost-min {
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
-}
-
-.cost-min-price {
-  position: absolute;
-  right: 40px;
-}
-
-.cost-max {
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-.range__input:hover {
-  background-color: #E6E6E6;
-}
-
-.range__input:focus {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
-}
-
-.range__input:active {
-  outline: 2px solid #000000;
-}
-
-
 .range__scale {
   position: relative;
   height: 2px;
   margin-top: 30px;
   margin-bottom: 34px;
   background-color: #E2E2E2;
+  width: 280px;
 }
 
 .range__bar {
@@ -69,16 +15,6 @@
   width: 240px;
 }
 
-.range__divider {
-  align-self: center;
-  width: 8px;
-  height: 2px;
-  position: absolute;
-  background-color: #BDBDBD;
-  content: "";
-  top: 20px;
-  left: 135px;
-}
 
 .range__toggle {
   position: absolute;
@@ -106,24 +42,9 @@
   position: relative;
 }
 
-.range__label {
-  position: relative;
-}
-
-.range__label-text {
-  position: absolute;
-  z-index: 1;
-  right: 22px;
-  top: 15px;
-}
-
 @media (min-width: $tablet-width) {
   .range__wrapper {
     width: 223px;
-  }
-
-  .range__input {
-    width: 87px;
   }
 
   .range__bar {
@@ -134,6 +55,11 @@
     top: -8px;
     left: 180px;
   }
+
+  .range__scale {
+    width: 223px;
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -143,10 +69,6 @@
 
   .range__bar {
     width: 274px;
-  }
-
-  .range__input {
-    width: 134px;
   }
 
   .range__toggle--max {

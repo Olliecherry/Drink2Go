@@ -51,7 +51,7 @@
   margin-top: 17px;
 }
 
-.catalog-card__price {
+.catalog-card__pricing {
   text-align: center;
   align-self: center;
   margin: 0;
@@ -91,17 +91,16 @@
 @media (min-width: $tablet-width) {
   .catalog-card {
     margin: 0;
-    margin-bottom: 30px;
   }
 
   .catalog-card__link {
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .catalog-card__item {
     margin-left: 30px;
-    margin-left: 30px;
+    margin-right: 30px;
     align-items: normal;
   }
 
@@ -120,5 +119,18 @@
 
   .catalog-card__choice {
     justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .catalog-card__button {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-card {
+    margin: 0;
+    margin-bottom: 0;
   }
 }

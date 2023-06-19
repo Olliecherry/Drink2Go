@@ -24,6 +24,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
 }
 
 .advertisement__slogan {
@@ -51,7 +52,7 @@
   margin: 22px 0 60px 0;
 }
 
-.advertisement__price {
+.advertisement__pricing {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -59,7 +60,7 @@
   margin-right: 20px;
 }
 
-.advertisement__oldprice {
+.advertisement__oldpricing {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -70,7 +71,7 @@
   color: #7859CF;
 }
 
-.advertisement__newprice {
+.advertisement__newpricing {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -196,23 +197,34 @@
 
   .advertisement__item {
     order: 1;
+    margin-top: 60px;
   }
 
   .advertisement__title {
     font-size: 56px;
     line-height: 80px;
     margin: 0;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
   }
 
   .advertisement__slogan {
     margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 80px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
   }
 
   .advertisement__description {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 110px;
+    padding-right: 110px;
     font-size: 20px;
     line-height: 32px;
+
+    & br {
+      display: none;
+    }
   }
 
   .advertisement__choice {

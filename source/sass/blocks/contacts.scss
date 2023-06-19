@@ -39,3 +39,11 @@
   margin-right: 6px;
   flex-shrink: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    margin: 0;
+    grid-template-rows: min-content min-content;
+    row-gap: 16px;
+  }
+}

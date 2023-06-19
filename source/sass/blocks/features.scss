@@ -128,12 +128,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: -10px 0 100px;
+    z-index: 3;
+  }
+
+  .features__name {
+    z-index: 6;
+  }
+
   .features__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 339px 339px;
     column-gap: 30px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content min-content;
     row-gap: 50px;
+    padding: 0;
+    margin-bottom: 0;
   }
 
   .features__motto {
@@ -141,7 +155,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     margin-top: 0;
   }
 
@@ -160,6 +174,18 @@
     font-weight: 700;
   }
 
+  .features__description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .features__description .features__item--eco {
+    & br {
+      display: block;
+    }
+  }
+
   .features__item {
     text-decoration: none;
     margin-top: 0;
@@ -168,30 +194,30 @@
     justify-content: flex-start;
     text-align: left;
     position: relative;
-    margin-left: 72px;
+    margin-left: 70px;
   }
 
   .features__item--speed .features__slogan::before {
-    top: 5px;
-    left: -60px;
+    top: 3px;
+    left: -70px;
     margin-left: 0;
   }
 
   .features__item--comfort .features__slogan::before {
-    top: 5px;
-    left: -60px;
+    top: 3px;
+    left: -70px;
     margin-left: 0;
   }
 
   .features__item--energy .features__slogan::before {
-    top: 5px;
-    left: -60px;
+    top: 3px;
+    left: -70px;
     margin-left: 0;
   }
 
   .features__item--eco .features__slogan::before {
-    top: 5px;
-    left: -60px;
+    top: 3px;
+    left: -70px;
     margin-left: 0;
   }
 }
