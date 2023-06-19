@@ -53,29 +53,29 @@ L.marker([59.968318, 30.317224], {icon: myIcon}).addTo(map);
 
 
 const elselect__native = document.getElementsByClassName("select__native-js")[0];
-const elSelectCustom = document.getElementsByClassName("select__custom-js")[0];
-const elSelectCustomBox = elSelectCustom.children[0];
-const elSelectCustomOpts = elSelectCustom.children[1];
-const customOptsList = Array.from(elSelectCustomOpts.children);
+const elselect__custom = document.getElementsByClassName("select__custom-js")[0];
+const elselect__customBox = elselect__custom.children[0];
+const elselect__customOpts = elselect__custom.children[1];
+const customOptsList = Array.from(elselect__customOpts.children);
 const optionsCount = customOptsList.length;
-const defaultLabel = elSelectCustomBox.getAttribute("data-value");
+const defaultLabel = elselect__customBox.getAttribute("data-value");
 
 let optionChecked = "";
 let optionHoveredIndex = -1;
 
-elSelectCustomBox.addEventListener("click", (e) => {
-  const isClosed = !elSelectCustom.classList.contains("isActive");
+elselect__customBox.addEventListener("click", (e) => {
+  const isClosed = !elselect__custom.classList.contains("isActive");
 
   if (isClosed) {
-    openSelectCustom();
+    openselect__custom();
   } else {
-    closeSelectCustom();
+    closeselect__custom();
   }
 });
 
-function openSelectCustom() {
-  elSelectCustom.classList.add("isActive");
-  elSelectCustom.setAttribute("aria-hidden", false);
+function openselect__custom() {
+  elselect__custom.classList.add("isActive");
+  elselect__custom.setAttribute("aria-hidden", false);
 
   if (optionChecked) {
     const optionCheckedIndex = customOptsList.findIndex(
@@ -88,10 +88,10 @@ function openSelectCustom() {
   document.addEventListener("keydown", supportKeyboardNavigation);
 }
 
-function closeSelectCustom() {
-  elSelectCustom.classList.remove("isActive");
+function closeselect__custom() {
+  elselect__custom.classList.remove("isActive");
 
-  elSelectCustom.setAttribute("aria-hidden", true);
+  elselect__custom.setAttribute("aria-hidden", true);
 
   updateCustomSelectHovered(-1);
 
@@ -100,8 +100,8 @@ function closeSelectCustom() {
 }
 
 function updateCustomSelectHovered(newIndex) {
-  const prevOption = elSelectCustomOpts.children[optionHoveredIndex];
-  const option = elSelectCustomOpts.children[newIndex];
+  const prevOption = elselect__customOpts.children[optionHoveredIndex];
+  const option = elselect__customOpts.children[newIndex];
 
   if (prevOption) {
     prevOption.classList.remove("isHover");
@@ -116,10 +116,10 @@ function updateCustomSelectHovered(newIndex) {
 function updateCustomSelectChecked(value, text) {
   const prevValue = optionChecked;
 
-  const elPrevOption = elSelectCustomOpts.querySelector(
+  const elPrevOption = elselect__customOpts.querySelector(
     `[data-value="${prevValue}"`
   );
-  const elOption = elSelectCustomOpts.querySelector(`[data-value="${value}"`);
+  const elOption = elselect__customOpts.querySelector(`[data-value="${value}"`);
 
   if (elPrevOption) {
     elPrevOption.classList.remove("isActive");
@@ -129,14 +129,14 @@ function updateCustomSelectChecked(value, text) {
     elOption.classList.add("isActive");
   }
 
-  elSelectCustomBox.textContent = text;
+  elselect__customBox.textContent = text;
   optionChecked = value;
 }
 
 function watchClickOutside(e) {
-  const didClickedOutside = !elSelectCustom.contains(event.target);
+  const didClickedOutside = !elselect__custom.contains(event.target);
   if (didClickedOutside) {
-    closeSelectCustom();
+    closeselect__custom();
   }
 }
 
@@ -155,24 +155,24 @@ function supportKeyboardNavigation(e) {
   if (event.keyCode === 13 || event.keyCode === 32) {
     e.preventDefault();
 
-    const option = elSelectCustomOpts.children[optionHoveredIndex];
+    const option = elselect__customOpts.children[optionHoveredIndex];
     const value = option && option.getAttribute("data-value");
 
     if (value) {
       elselect__native.value = value;
       updateCustomSelectChecked(value, option.textContent);
     }
-    closeSelectCustom();
+    closeselect__custom();
   }
 
   if (event.keyCode === 27) {
-    closeSelectCustom();
+    closeselect__custom();
   }
 }
 
 elselect__native.addEventListener("change", (e) => {
   const value = e.target.value;
-  const elRespectiveCustomOption = elSelectCustomOpts.querySelectorAll(
+  const elRespectiveCustomOption = elselect__customOpts.querySelectorAll(
     `[data-value="${value}"]`
   )[0];
 
@@ -185,7 +185,7 @@ customOptsList.forEach(function (elOption, index) {
 
     elselect__native.value = value;
     updateCustomSelectChecked(value, e.target.textContent);
-    closeSelectCustom();
+    closeselect__custom();
   });
 
   elOption.addEventListener("mouseenter", (e) => {

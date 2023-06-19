@@ -1,31 +1,31 @@
 .select__native,
-.selectCustom {
+.select__custom {
   position: relative;
   width: 165px;
   height: 32px;
 }
 
-.selectCustom {
+.select__custom {
   position: absolute;
   top: 0;
   left: 0;
   display: none;
 }
 
-.selectCustom {
+.select__custom {
   display: block;
 }
 
-.select__native:focus + .selectCustom {
+.select__native:focus + .select__custom {
   display: none;
 }
 
-.select__native:hover + .selectCustom {
+.select__native:hover + .select__custom {
   display: none;
 }
 
 .select__native:focus,
-.selectCustom.isActive .select__custom-trigger {
+.select__custom.isActive .select__custom-trigger {
   outline: none;
 }
 
@@ -56,7 +56,7 @@
   line-height: 24px;
   background-color: transparent;
   color: #333333;
-  border: 1px solid #6f6f6f;
+  border: 1px solid transparent;
   border-radius: 4px;
 }
 
@@ -79,15 +79,18 @@
   width: 100%;
   height: 100%;
   background-color: #fff;
-  padding: 0;
+  padding: 4px 10px 4px 10px;
   cursor: pointer;
+  color: #9070CF;
 }
 
-.select__custom-trigger::after {
+.select__custom.isActive .select__custom-trigger::after {
   content: url("../../img/images-svg/icon-select-down.svg");
   position: absolute;
   top: 0;
   right: 2px;
+  width: 10px;
+  height: 10px;
 }
 
 .select__custom-trigger:hover {
@@ -96,7 +99,7 @@
 
 .select__custom-options {
   position: absolute;
-  top: 40px;
+  top: 0;
   left: 0;
   width: 100%;
   border-radius: 4px;
@@ -106,7 +109,7 @@
   display: none;
 }
 
-.selectCustom.isActive .select__custom-options {
+.select__custom.isActive .select__custom-options {
   display: block;
 }
 
