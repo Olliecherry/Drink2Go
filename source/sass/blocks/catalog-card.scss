@@ -1,7 +1,7 @@
 .catalog-card {
   background-color: #ffffff;
   margin: 0;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: left;
   align-items: flex-start;
-  margin-left: 20px;
+  margin-left: 23px;
   margin-right: 20px;
 }
 
@@ -25,7 +25,7 @@
 
 .catalog-card__link {
   margin-top: 40px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .catalog-card__name {
@@ -47,13 +47,20 @@
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+  margin-top: 17px;
 }
 
 .catalog-card__price {
   text-align: center;
   align-self: center;
+  margin: 0;
   margin-right: 50px;
+  margin-bottom: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .catalog-card__button {
@@ -68,6 +75,7 @@
   text-align: center;
   align-self: center;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .catalog-card__icon {

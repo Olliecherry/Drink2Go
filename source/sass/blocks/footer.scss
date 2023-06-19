@@ -49,7 +49,11 @@
 @media (max-width: $mobile-width-only) {
   .footer__social {
     border-bottom: 1px solid #F0EBFF;
-    padding: 20px;
+    padding: 20px 22px;
+  }
+
+  .footer__logo {
+    
   }
 
   .footer__text {
