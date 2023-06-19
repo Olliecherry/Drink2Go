@@ -111,7 +111,7 @@
   .header__part {
     position: relative;
     margin-bottom: 0;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .header__logo {
@@ -130,6 +130,7 @@
     display: flex;
     margin-top: 24px;
     margin-left: 190px;
+    margin-right: 162px;
   }
 
   .header__text {
