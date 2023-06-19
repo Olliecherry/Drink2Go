@@ -62,6 +62,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
 }
 
 .catalog__pagination {
@@ -88,6 +89,7 @@
     display: grid;
     grid-template-columns: 317px 317px 317px;
     column-gap: 30px;
+    align-items: start;
   }
 
   .catalog__container {

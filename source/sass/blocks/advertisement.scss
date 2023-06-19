@@ -159,19 +159,19 @@
 
 @media (min-width: $tablet-width) {
   .advertisement__wrapper--white {
-    height: 828px;
+    min-height: 828px;
     background: linear-gradient(#F3EBE1 640px,
     #ffffff 188px);
   }
 
   .advertisement__wrapper--lavender {
-    height: 828px;
+    min-height: 828px;
     background: linear-gradient(#EAE6FC 640px,
     #ffffff 188px);
   }
 
   .advertisement__wrapper--espresso {
-    height: 828px;
+    min-height: 828px;
     background: linear-gradient(#E5E6E8 640px,
     #ffffff 188px);
   }
@@ -218,7 +218,7 @@
     display: grid;
     grid-template-columns: 600px 625px;
     row-gap: 30px;
-    height: 714px;
+    min-height: 714px;
   }
 
   .advertisement__wrapper--white {
