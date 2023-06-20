@@ -151,6 +151,7 @@
   .advertisement__image {
     margin-top: 20px;
     margin-bottom: 5px;
+    margin-right: 0;
   }
 
   .advertisement__wrapper--white {
@@ -188,6 +189,8 @@
   .advertisement__image {
     display: flex;
     order: 2;
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
 
   .advertisement__product {
@@ -237,7 +240,7 @@
   .advertisement__wrapper {
     display: grid;
     grid-template-columns: 600px 625px;
-    row-gap: 30px;
+    column-gap: 30px;
     min-height: 714px;
   }
 
@@ -255,18 +258,28 @@
 
   .advertisement__image {
     display: flex;
+    justify-content: center;
+    align-items: center;
     order: 1;
+    margin-top: -50px;
+    margin-bottom: 0;
+    margin-right: -20px;
   }
 
   .advertisement__product {
     width: 600px;
     height: 600px;
+    padding: 0;
+    margin: 0;
+    display: block;
   }
 
   .advertisement__item {
     order: 2;
     align-items: flex-start;
     text-align: left;
+    margin-top: -45px;
+    margin-left: 10px;
   }
 
   .advertisement__description {

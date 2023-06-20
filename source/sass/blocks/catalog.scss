@@ -10,6 +10,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #333333;
+  padding-top: 0;
 }
 
 .catalog__slogan {
@@ -104,9 +105,16 @@
     margin-top: 70px;
     margin-bottom: 90px;
   }
+
+  .catalog__container {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 100px;
+  }
   .catalog__list {
     display: grid;
     grid-template-columns: 317px 317px 317px;
@@ -116,8 +124,9 @@
 
   .catalog__container {
     display: grid;
-    grid-template-columns: 348px min-content min-content;
-    grid-template-rows: 84px 120px 200px 244px min-content min-content min-content;
+    grid-template-columns: 318px min-content min-content;
+    grid-template-rows: 160px 120px 200px 244px min-content min-content min-content;
+    // padding-top: 100px;
   }
 
   .catalog__slogan {
@@ -126,7 +135,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 0;
-    margin-top: 100px;
+    // margin-top: 100px;
   }
 
   .catalog__select {
@@ -143,8 +152,8 @@
     grid-row-start: 3;
     grid-row-end: 5;
     margin: 0;
-    margin-right: 30px;
-    margin-top: -40px;
+    // margin-right: 30px;
+    // margin-top: -40px;
   }
 
   .catalog__options {

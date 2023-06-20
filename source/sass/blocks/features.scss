@@ -226,6 +226,7 @@
   .features {
     width: 100%;
     margin-bottom: 120px;
+    margin-top: 100px;
   }
 
   .features__list {
@@ -234,6 +235,10 @@
     column-gap: 30px;
     grid-template-rows: none;
     row-gap: 0;
+  }
+
+  .features__name {
+    margin-bottom: 4px;
   }
 
   .features__motto {
