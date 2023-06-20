@@ -70,11 +70,11 @@
     width: 20px;
 
     &:hover {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
     }
 
     &:focus {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
     }
 
     &:active {
@@ -93,11 +93,11 @@
     width: 20px;
 
     &:hover {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
     }
 
     &:focus {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
     }
 
     &:active {
@@ -109,7 +109,7 @@
     }
   }
 
-  .swiper-pagination-bullets.swiper-pagination-horizontal{
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
     display: flex;
     justify-content: center;
     top: -70px;
@@ -119,12 +119,12 @@
     display: inline-block;
     height: 4px;
     width: 62px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     opacity: 1;
     border-radius: 0%;
   }
 
   .swiper-pagination-bullet-active {
-    background-color: #7859CF;
+    background-color: #7859cf;
   }
 }

@@ -3,31 +3,31 @@
   height: 2px;
   margin-top: 30px;
   margin-bottom: 34px;
-  background-color: #E2E2E2;
+  background-color: #e2e2e2;
   width: 280px;
 }
 
 .range__bar {
   position: absolute;
   height: 4px;
-  background-color: #9070EC;
+  background-color: #9070ec;
   left: 0;
   width: 240px;
 
   &:hover {
-    background-color: #9070EC;
+    background-color: #9070ec;
   }
 
   &:focus {
-    background-color: #9070EC;
+    background-color: #9070ec;
   }
 
   &:active {
-    background-color: #593CAC;
+    background-color: #593cac;
   }
 
   &:disabled {
-    background-color: #BDBDBD;
+    background-color: #bdbdbd;
   }
 }
 
@@ -37,7 +37,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border-color: #9070EC;
+  border-color: #9070ec;
   cursor: pointer;
   background-color: #ffffff;
 }
@@ -51,19 +51,19 @@
   left: 240px;
 
   &:hover {
-    background-color: #F0EBFF;
+    background-color: #f0ebff;
   }
 
   &:focus {
-    background-color: #F0EBFF;
+    background-color: #f0ebff;
   }
 
   &:active {
-    background-color: #7859CF;
+    background-color: #7859cf;
   }
 
   &:disabled {
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
   }
 }
 

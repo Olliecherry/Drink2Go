@@ -13,31 +13,31 @@
   align-items: center;
   text-align: center;
   height: 40px;
-  background-color: #FFFFFF;
-  color: #7859CF;
+  background-color: #ffffff;
+  color: #7859cf;
   border-radius: 4px;
   padding: 0;
   margin: 0;
 
   &:hover {
-    background-color: #9070EC;
+    background-color: #9070ec;
   }
 
   &:focus {
-    background-color: #9070EC;
+    background-color: #9070ec;
   }
 
   &:active {
-    background-color: #593CAC;
+    background-color: #593cac;
   }
 
   &:disabled {
-    background-color: #BDBDBD;
+    background-color: #bdbdbd;
   }
 }
 
 .pagination__item--current {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .pagination__link {
@@ -47,7 +47,7 @@
   font-weight: 400;
   text-decoration: none;
   text-align: center;
-  color: #7859CF;
+  color: #7859cf;
 }
 
 .pagination__link--current {
@@ -99,4 +99,3 @@
     padding: 8px 22px;
   }
 }
-

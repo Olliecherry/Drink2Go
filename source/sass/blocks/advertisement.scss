@@ -1,7 +1,6 @@
 .advertisement {
   z-index: 1;
   display: flex;
-  margin-top: 60px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -32,6 +31,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
 }
 
 .advertisement__description {
@@ -68,7 +72,7 @@
   margin: 0;
   margin-right: 6px;
   text-decoration-line: line-through;
-  color: #7859CF;
+  color: #7859cf;
 }
 
 .advertisement__newpricing {
@@ -82,7 +86,7 @@
 .advertisement__order {
   width: 113px;
   height: 36px;
-  background-color: #7859CF;
+  background-color: #7859cf;
   text-decoration: none;
   border-radius: 4px;
 
@@ -92,19 +96,19 @@
   justify-content: center;
 
   &:hover {
-    background-color: #9070EC;
+    background-color: #9070ec;
   }
 
   &:focus {
-    background-color: #9070EC;
+    background-color: #9070ec;
   }
 
   &:active {
-    background-color: #593CAC;
+    background-color: #593cac;
   }
 
   &:disabled {
-    background-color: #BDBDBD;
+    background-color: #bdbdbd;
   }
 }
 
@@ -114,7 +118,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -125,7 +129,7 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #7859CF;
+  color: #7859cf;
   margin: 0;
 }
 
@@ -140,15 +144,10 @@
   letter-spacing: 0.02em;
 }
 
-.advertisement__slogan {
-  margin-top: 4px;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
-}
-
 @media (max-width: $mobile-width-only) {
+  .advertisement {
+    margin-top: 0;
+  }
   .advertisement__image {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -156,15 +155,15 @@
   }
 
   .advertisement__wrapper--white {
-    background-color: #F3EBE1;
+    background-color: #f3ebe1;
   }
 
   .advertisement__wrapper--lavender {
-    background-color: #EAE6FC;
+    background-color: #eae6fc;
   }
 
   .advertisement__wrapper--espresso {
-    background-color: #E5E6E8;
+    background-color: #e5e6e8;
   }
 
   .advertisement__description {
@@ -177,19 +176,19 @@
 @media (min-width: $tablet-width) {
   .advertisement__wrapper--white {
     min-height: 828px;
-    background: linear-gradient(#F3EBE1 640px,
+    background: linear-gradient(#f3ebe1 640px,
     #ffffff 188px);
   }
 
   .advertisement__wrapper--lavender {
     min-height: 828px;
-    background: linear-gradient(#EAE6FC 640px,
+    background: linear-gradient(#eae6fc 640px,
     #ffffff 188px);
   }
 
   .advertisement__wrapper--espresso {
     min-height: 828px;
-    background: linear-gradient(#E5E6E8 640px,
+    background: linear-gradient(#e5e6e8 640px,
     #ffffff 188px);
   }
 
@@ -246,6 +245,10 @@
 
 
 @media (min-width: $desktop-width) {
+  .advertisement {
+    margin: 0;
+  }
+
   .advertisement__wrapper {
     display: grid;
     grid-template-columns: 600px 625px;
@@ -254,15 +257,15 @@
   }
 
   .advertisement__wrapper--white {
-    background: linear-gradient(#F3EBE1, #F3EBE1);
+    background: linear-gradient(#f3ebe1, #f3ebe1);
   }
 
   .advertisement__wrapper--lavender {
-    background: linear-gradient(#EAE6FC, #EAE6FC);
+    background: linear-gradient(#eae6fc, #eae6fc);
   }
 
   .advertisement__wrapper--espresso {
-    background: linear-gradient(#E5E6E8, #E5E6E8);
+    background: linear-gradient(#e5e6e8, #e5e6e8);
   }
 
   .advertisement__image {

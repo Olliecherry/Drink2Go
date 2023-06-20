@@ -3,22 +3,21 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #BDBDBD;
+  color: #bdbdbd;
   align-items: center;
   display: flex;
 
   &:hover {
-    color: #7859CF;
+    color: #7859cf;
   }
 
   &:focus {
-    color: #7859CF;
+    color: #7859cf;
   }
 
   &:active {
-    color: #593CAC;
+    color: #593cac;
   }
-
 }
 
 .copyright__text {

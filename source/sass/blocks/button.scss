@@ -1,5 +1,5 @@
 .button-violet {
-  background-color: #7859CF;
+  background-color: #7859cf;
   color: #ffffff;
   border-radius: 4px;
   margin: 0;
@@ -7,46 +7,46 @@
   border: none;
 
   &:hover {
-    background-color: #9070EC;
+    background-color: #9070ec;
   }
 
   &:focus {
-    background-color: #9070EC;
+    background-color: #9070ec;
   }
 
   &:active {
-    background-color: #593CAC;
+    background-color: #593cac;
   }
 
   &:disabled {
-    background-color: #BDBDBD;
+    background-color: #bdbdbd;
   }
 }
 
 .button--white {
-  background-color: #FFFFFF;
-  color: #7859CF;
+  background-color: #ffffff;
+  color: #7859cf;
   border-radius: 4px;
   border: none;
 
   &:hover {
-    background-color: #9070EC;
-    color: #7859CF;
+    background-color: #9070ec;
+    color: #7859cf;
   }
 
   &:focus {
-    background-color: #9070EC;
-    color: #FFFFFF;
+    background-color: #9070ec;
+    color: #ffffff;
   }
 
   &:active {
-    background-color: #593CAC;
-    color: #FFFFFF;
+    background-color: #593cac;
+    color: #ffffff;
   }
 
   &:disabled {
-    background-color: #BDBDBD;
-    color: #FFFFFF;
+    background-color: #bdbdbd;
+    color: #ffffff;
   }
 }
 
@@ -57,4 +57,3 @@
     margin-right: 20px;
   }
 }
-

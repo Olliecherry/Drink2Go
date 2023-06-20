@@ -71,7 +71,7 @@
   }
 
   .form__label-radiobutton:hover .form__checkmark {
-    border-color: #9070EC;
+    border-color: #9070ec;
   }
 
   .form__label-radiobutton:hover .form__checkmark::after {
@@ -79,7 +79,7 @@
   }
 
   .form__input-radiobutton:focus ~ .form__checkmark {
-    border-color: #9070EC;
+    border-color: #9070ec;
   }
 
   .form__input-radiobutton:focus ~ .form__checkmark::after {
@@ -87,15 +87,15 @@
   }
 
   .form__input-radiobutton:disabled ~ .form__checkmark {
-    border-color: #E2E2E2;
+    border-color: #e2e2e2;
   }
 
   .form__input-radiobutton:disabled ~ .form__text {
-    color: #BDBDBD;
+    color: #bdbdbd;
   }
 
   .form__input-radiobutton:disabled ~ .form__checkmark::after {
-    background-color: #E2E2E2;
+    background-color: #e2e2e2;
   }
 
   .form__checkmark {
@@ -104,7 +104,7 @@
     left: 0;
     height: 24px;
     width: 24px;
-    border: 2px solid #7859CF;
+    border: 2px solid #7859cf;
     border-radius: 50%;
   }
 
@@ -117,7 +117,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #7859CF;
+    background-color: #7859cf;
   }
 }
 
@@ -151,8 +151,8 @@
     height: 24px;
     width: 42px;
     border-radius: 12px;
-    background-color: #BDBDBD;
-    border: 2px solid #BDBDBD;
+    background-color: #bdbdbd;
+    border: 2px solid #bdbdbd;
   }
 
   .form__checkmark::after {
@@ -163,7 +163,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   .form__checkbox .form__checkmark {
@@ -176,16 +176,16 @@
   }
 
   .form__label-checkbox:hover .form__checkmark {
-    border-color: #9070EC;
+    border-color: #9070ec;
     background-color: rgba(120, 89, 207, 0.25);
   }
 
   // .form__label-checkbox:hover .form__checkmark::after {
-  //   background-color: #FFFFFF;
+  //   background-color: #ffffff;
   // }
 
   .form__input-checkbox:focus ~ .form__checkmark {
-    border-color: #9070EC;
+    border-color: #9070ec;
   }
 
   .form__input-checkbox:focus ~ .form__checkmark::after {
@@ -193,25 +193,25 @@
   }
 
   .form__input-checkbox:disabled ~ .form__checkmark {
-    background-color: #E2E2E2;
-    border-color: #E2E2E2;
+    background-color: #e2e2e2;
+    border-color: #e2e2e2;
   }
 
   .form__input-checkbox:disabled ~ .form__text {
-    color: #BDBDBD;
+    color: #bdbdbd;
   }
 
   .form__input-checkbox:disabled ~ .form__checkmark::after {
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
   }
 
   .form__input-checkbox:checked:disabled ~ .form__checkmark {
-    background-color: #E2E2E2;
-    border-color: #E2E2E2;
+    background-color: #e2e2e2;
+    border-color: #e2e2e2;
   }
 
   .form__input-checkbox:checked:disabled ~ .form__checkmark::after {
-    background-color: #BDBDBD;
+    background-color: #bdbdbd;
   }
 
 
@@ -222,8 +222,8 @@
   }
 
   .form__input-checkbox:checked ~ .form__checkmark {
-    background-color: #7859CF;
-    border-color: #7859CF;
+    background-color: #7859cf;
+    border-color: #7859cf;
   }
 }
 

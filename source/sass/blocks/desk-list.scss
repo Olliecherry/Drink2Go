@@ -11,42 +11,38 @@
   align-self: center;
 
   &:hover {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   &:focus {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   &:active {
-    background-color: #F0EBFF;
+    background-color: #f0ebff;
   }
 }
 
 .desk-list__link {
   &:hover {
-    color: #7859CF;
+    color: #7859cf;
   }
 
   &:focus {
-    color: #7859CF;
+    color: #7859cf;
   }
 
   &:active {
-    color: #7859CF;
+    color: #7859cf;
   }
 }
 
 .desk-list__link:hover .desk-list__icon {
-  fill: #7859CF;
+  fill: #7859cf;
 }
 
 .desk-list__link:focus .desk-list__icon {
-  fill: #7859CF;
-}
-
-.desk-list__link:focus .desk-list__icon {
-  fill: #7859CF;
+  fill: #7859cf;
 }
 
 .desk-list__text {

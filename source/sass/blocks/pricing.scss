@@ -15,29 +15,30 @@
   padding-left: 10px;
   padding-bottom: 8px;
   text-align: center;
-  background-color: #FFFFFF;
-  border: 2px solid #9070EC;
+  background-color: #ffffff;
+  border: 2px solid #9070ec;
   border-radius: 4px;
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
   appearance: textfield;
   color: #333333;
 
+  &:hover {
+    background-color: #e6e6e6;
+  }
+
   &:focus {
-    background-color: #FFFFFF;
-    border: 2px solid #593CAC;
+    background-color: #ffffff;
+    border: 2px solid #593cac;
   }
 
   &:disabled {
-    background-color: #F8F8F8;
-    border: 2px solid #E2E2E2;
-    color: #E2E2E2;
+    background-color: #f8f8f8;
+    border: 2px solid #e2e2e2;
+    color: #e2e2e2;
   }
 }
 
 .pricing__input::-webkit-outer-spin-button,
 .pricing__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -57,25 +58,12 @@
   border-top-right-radius: 4px;
 }
 
-.pricing__input:hover {
-  background-color: #E6E6E6;
-}
-
-.pricing__input:focus {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
-}
-
-.pricing__input:active {
-  outline: 2px solid #000000;
-}
-
 .pricing__divider {
   align-self: center;
   width: 8px;
   height: 2px;
   position: absolute;
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
   content: "";
   top: 85px;
   left: 135px;

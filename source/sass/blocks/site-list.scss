@@ -2,15 +2,15 @@
   list-style-type: none;
 
   &:hover {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   &:focus {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   &:active {
-    background-color: #F0EBFF;
+    background-color: #f0ebff;
   }
 }
 
@@ -31,20 +31,20 @@
   text-transform: uppercase;
 
   &:hover {
-    color: #9070EC;
+    color: #9070ec;
   }
 
   &:focus {
-    color: #9070EC;
+    color: #9070ec;
   }
 
   &:active {
-    color: #7859CF;
+    color: #7859cf;
   }
 }
 
 .site-list__item--active {
-  color: #7859CF;
+  color: #7859cf;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -63,11 +63,11 @@
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 21px;
-    border-bottom: 1px solid #F0EBFF;
+    border-bottom: 1px solid #f0ebff;
   }
 
   .site-list__item--index {
-    border-top: 1px solid #F0EBFF;
+    border-top: 1px solid #f0ebff;
   }
 
   .site-list__link {
@@ -102,7 +102,7 @@
   }
 
   .site-list__item--active {
-    border-bottom: 2px solid #7859CF;
+    border-bottom: 2px solid #7859cf;
   }
 
   .site-list__link--basket {
@@ -139,6 +139,6 @@
   }
 
   .site-list__item--active {
-    border-bottom: 2px solid #7859CF;
+    border-bottom: 2px solid #7859cf;
   }
 }

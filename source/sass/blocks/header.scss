@@ -26,7 +26,6 @@
   }
 }
 
-
 @media (max-width: $mobile-width-only) {
   .header__part {
     display: flex;
@@ -59,7 +58,7 @@
     z-index: 4;
 
     &:active {
-      background-color: #F0EBFF;
+      background-color: #f0ebff;
     }
   }
 
@@ -117,7 +116,6 @@
     position: absolute;
     top: 22px;
     left: 40px;
-
   }
 
   .header__logotip {
@@ -141,4 +139,3 @@
     line-height: 16px;
   }
 }
-
