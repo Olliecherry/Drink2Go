@@ -180,9 +180,15 @@
     font-weight: 400;
   }
 
-  .features__description .features__item--eco {
+  .features__item--eco .features__description {
     & br {
       display: block;
+    }
+  }
+
+  .features__item--energy .features__description {
+    & br {
+      display: none;
     }
   }
 
@@ -242,8 +248,8 @@
   }
 
   .features__motto {
-    margin-bottom: 156px;
     margin-top: 0;
+    margin-bottom: 142px;
   }
 
   .features__description {
@@ -263,25 +269,25 @@
   }
 
   .features__item--speed .features__slogan::before {
-    top: -66px;
+    top: -76px;
     left: 50%;
     margin-left: -25px;
   }
 
   .features__item--comfort .features__slogan::before {
-    top: -66px;
+    top: -76px;
     left: 50%;
     margin-left: -25px;
   }
 
   .features__item--energy .features__slogan::before {
-    top: -66px;
+    top: -76px;
     left: 50%;
     margin-left: -25px;
   }
 
   .features__item--eco .features__slogan::before {
-    top: -66px;
+    top: -76px;
     left: 50%;
     margin-left: -25px;
   }

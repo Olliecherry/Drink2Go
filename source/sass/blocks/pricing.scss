@@ -15,12 +15,24 @@
   padding-left: 10px;
   padding-bottom: 8px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border: 2px solid #9070EC;
   border-radius: 4px;
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
+  color: #333333;
+
+  &:focus {
+    background-color: #FFFFFF;
+    border: 2px solid #593CAC;
+  }
+
+  &:disabled {
+    background-color: #F8F8F8;
+    border: 2px solid #E2E2E2;
+    color: #E2E2E2;
+  }
 }
 
 .pricing__input::-webkit-outer-spin-button,

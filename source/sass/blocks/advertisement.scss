@@ -137,6 +137,7 @@
   color: #333333;
   margin: 0;
   text-transform: capitalize;
+  letter-spacing: 0.02em;
 }
 
 .advertisement__slogan {
@@ -165,6 +166,12 @@
   .advertisement__wrapper--espresso {
     background-color: #E5E6E8;
   }
+
+  .advertisement__description {
+    & br {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -189,8 +196,8 @@
   .advertisement__image {
     display: flex;
     order: 2;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 1px;
+    margin-bottom: 1px;
   }
 
   .advertisement__product {
@@ -209,6 +216,7 @@
     margin: 0;
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 700;
+    letter-spacing: 0.02em;
   }
 
   .advertisement__slogan {
@@ -220,10 +228,11 @@
   }
 
   .advertisement__description {
-    padding-left: 110px;
-    padding-right: 110px;
     font-size: 20px;
     line-height: 32px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
 
     & br {
       display: none;
@@ -284,7 +293,8 @@
 
   .advertisement__description {
     padding: 0;
-    padding-right: 50px;
+    padding-right: 10px;
+    text-align: left;
   }
 
   .advertisement__choice {

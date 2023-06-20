@@ -180,8 +180,9 @@
   .select {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 26px;
+    align-items: end;
+    margin-bottom: -10px;
+    align-self: flex-end;
   }
 
   .select__label {

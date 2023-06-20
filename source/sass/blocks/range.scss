@@ -13,6 +13,22 @@
   background-color: #9070EC;
   left: 0;
   width: 240px;
+
+  &:hover {
+    background-color: #9070EC;
+  }
+
+  &:focus {
+    background-color: #9070EC;
+  }
+
+  &:active {
+    background-color: #593CAC;
+  }
+
+  &:disabled {
+    background-color: #BDBDBD;
+  }
 }
 
 
@@ -33,6 +49,22 @@
 .range__toggle--max {
   top: -8px;
   left: 240px;
+
+  &:hover {
+    background-color: #F0EBFF;
+  }
+
+  &:focus {
+    background-color: #F0EBFF;
+  }
+
+  &:active {
+    background-color: #7859CF;
+  }
+
+  &:disabled {
+    background-color: #F8F8F8;
+  }
 }
 
 .range__wrapper {
@@ -73,10 +105,11 @@
 
   .range__toggle--max {
     top: -8px;
-    left: 220px;
+    left: 273px;
   }
 
   .range__scale {
     width: 318px;
+    margin-top: 28px;
   }
 }
